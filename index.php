@@ -1,7 +1,7 @@
 <?php get_header(); ?>   
 
-<!------#content------>
-        <div id="content">
+<!------#------>
+        <div id="">
             
         <?php if (have_posts()) : while (have_posts()) : the_post();?>
             
@@ -16,8 +16,8 @@
             
         <?php endwhile;?>
         <?php endif; ?>
-            </div><!--end #content-->
-<!-------end #content------>
+            </div><!--end #-->
+<!-------end #------>
 
 <?php get_sidebar(); ?>
 
