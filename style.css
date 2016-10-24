@@ -55,17 +55,3 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding-right: 0;
 }
 
-
-/* MEDIA QUERIES */
-
-@media screen and (min-width: 47.5em) {
-    .leftColumn {
-        margin-right: 19.5em;
-    }
-    .rightColumn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 18.75em;
-    }
-}
