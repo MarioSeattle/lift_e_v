@@ -1,4 +1,6 @@
-/*Theme Name: lift_e_v
+/* Mike was here again */
+/*
+Theme Name: lift_e_v
 Theme URI: http://
 Author: Advance Web Dev Fall 2016
 Author URI:
@@ -19,6 +21,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+}
+
+.columnsContainer,
+footer,
+header {
+    position: relative;
+    margin: .5em;
+}
+
+.leftColumn,
+.rightColumn,
+footer,
+header {
+    border: 1px solid #ccc;
+    padding: 1.25em;
+}
+
+.leftColumn {
+    margin-bottom: .5em;
+}
+
 .nav {
     list-style: none;
     margin-left: 0;
@@ -55,3 +81,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding-right: 0;
 }
 
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+    .leftColumn { margin-right: 19.5em; }
+
+    .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }
+}

@@ -24,10 +24,10 @@
 <header>
     <nav>
         <ul class="nav inline-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Trips</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
         </ul>
     </nav>
 </header>
