@@ -24,15 +24,13 @@
     </div><!--end #-->
 
     <div class="rightColumn">
+        <?php get_sidebar(); ?>
 
     </div>
     <!-------end #------>
 
 
 </div>
-
-
-<?php get_sidebar(); ?>
 
 
 <?php get_footer(); ?>
