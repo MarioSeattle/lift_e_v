@@ -23,11 +23,6 @@
 
 <header>
     <nav>
-        <ul class="nav inline-items">
-            <li><a href="#">test</a></li>
-            <li><a href="#">test</a></li>
-            <li><a href="#">test</a></li>
-            <li><a href="#">test</a></li>
-        </ul>
+        <?php wp_nav_menu() ?>
     </nav>
 </header>
