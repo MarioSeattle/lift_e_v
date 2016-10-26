@@ -45,43 +45,56 @@ header {
     margin-bottom: .5em;
 }
 
-.nav {
+h1 {
+    text-align: center;
+}
+
+.menu-test-container ul {
+    text-align: center;
+}
+nav ul {
     list-style: none;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
 }
 
-.nav > li,
-.nav > li > a {
+nav ul > li {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
+    position: relative;
+    background: black;
+    padding: 0 15px;
 }
 
-.inline-items {
-    margin-top: 0;
+nav ul ul {
+    position: absolute;
+    left: -999em;
+    top: 0;
+    z-index: 999;
+    width: 100%; // erzwingt volle Breite, wenn //nachfolgend kein px angegeben
 }
 
-.inline-items li {
-    margin-left: 0;
-    border-left: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+nav ul ul a {
+    width: 100px;
 }
 
-.inline-items li:first-child {
-    margin-left: 0;
-    border: none;
-    padding-left: 0;
-    padding-right: 10px;
+nav ul > li:hover > ul {
+    left: 50%;
+    margin-left: -65px;
+    top: 30px;
 }
 
-.inline-items li:last-child {
-    padding-right: 0;
+nav ul ul > li:hover > ul {
+    top: 0;
+    left: 150%;
 }
 
-
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
 /* MEDIA QUERIES */
 @media screen and (min-width: 47.5em ) {
     .leftColumn { margin-right: 19.5em; }
