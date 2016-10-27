@@ -59,7 +59,7 @@ function get_my_title_tag() {
 
 function new_excerpt_length($length) {
 
-return 100;
+return 1000;
 
 }
 
