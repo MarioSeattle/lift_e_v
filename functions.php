@@ -49,6 +49,31 @@ function get_my_title_tag() {
 }
 //
 //add page excerpt support for wordpress
-	add_post_type_support( 'page', 'excerpt' );
+	// add_post_type_support( 'page', 'excerpt' );
 //
+?>
+
+<?php
+
+// Changing excerpt length
+
+function new_excerpt_length($length) {
+
+return 100;
+
+}
+
+add_filter('excerpt_length', 'new_excerpt_length');
+
+
+
+// Changing excerpt more
+
+function new_excerpt_more($more) {
+
+return '...';
+
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 ?>
