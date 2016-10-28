@@ -1,11 +1,22 @@
-<?php 
+<?php
 /*
-Theme Name: Westwood Design
-Author: Rosie Fisher-Sergent
-Author URI: http://www.fishersergent.com/
-Description: Theme for the Westwood Design landscaping company website
+Theme Name: lift_e_v
+Theme URI: http://
+Author: Advance Web Dev Fall 2016
+Author URI:
+Description: The lift every voice foundation
 Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain:
 */
+// Remove WP Version for security
+function remove_wp_version() {
+    return '';
+}
+//
+add_filter('the_generator', 'remove_wp_version');
 //Register My Menus
 register_nav_menus(array(
     'main-menu' => __( 'Main' ),
@@ -25,55 +36,34 @@ register_sidebars(array(
 //get_my_title_tag function for SEO
 function get_my_title_tag() {
     global $post;
-    
     if(is_front_page()) {//if its the front page get the description/tagline
         bloginfo('description');
-        
     }elseif(is_page || is_single){//if its a page or single get the title
-        
         the_title();
     }else{//everything else, get the description/tagline
         
         bloginfo('description');
     }
-    
     if($post->post_parent){//for parent page
         echo ' | ';
         echo get_the_title($post->post_parent);//get the title for that page
     }
-    
     echo ' | '; //echo fun stuff for more google fun
     bloginfo('name');
     echo ' | ';
     echo 'Seattle, WA ';  
 }
-//
-//add page excerpt support for wordpress
-	// add_post_type_support( 'page', 'excerpt' );
-//
-?>
-
-<?php
-
 // Changing excerpt length
-
 function new_excerpt_length($length) {
-
-return 1000;
-
+    return 1000;
 }
-
 add_filter('excerpt_length', 'new_excerpt_length');
-
-
-
 // Changing excerpt more
-
 function new_excerpt_more($more) {
-
-return '...';
-
+    return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-
 ?>
+
+
+
