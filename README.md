@@ -6,7 +6,7 @@ Mario
 
 Aaron
 
-Nicole (testing brackets>github>wordpress connection)
+Nicole 
 
 Rosie
 
