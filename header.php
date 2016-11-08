@@ -53,6 +53,4 @@
         <?php wp_nav_menu() ?>
     </nav>
 <!--Header Ends here-->
-<nav>
-    </nav>
 </header>
