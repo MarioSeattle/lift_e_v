@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="initial-scale=1"/>
-    <link href="style.css" rel="stylesheet"/>
     <!--for img slider start-->
     <link href="css/ideal-image-slider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+
+
     <!-- Remy Sharp Shim -->
     <script src="js/html5.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
