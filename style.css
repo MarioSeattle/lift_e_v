@@ -184,6 +184,8 @@ nav {
     padding: 0;
     background-color: #cccccc;
     clear: both;
+    display: flex;
+    justify-content: center;
 
 }
 /* Since we'll have the "ul li" "float:left"
