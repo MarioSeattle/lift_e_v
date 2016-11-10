@@ -180,14 +180,12 @@ header h1 {
 }
 /* Giving a background-color to the nav container. */
 nav {
-    margin: 0 0 20px;
-    padding: 0;
     background-color: #cccccc;
     clear: both;
     display: flex;
     justify-content: center;
-    display: flex;
-    justify-content: center;
+    margin: 0 0 20px;
+    padding: 0;
 
 }
 /* Since we'll have the "ul li" "float:left"
@@ -209,10 +207,10 @@ nav ul {
 }
 /* Positioning the navigation items inline */
 nav ul li {
-    margin: 5px 5px 0px 0px;
+    margin: 0 2vw 0px;
     display:inline-block;
     float: left;
-    background-color: #888;
+    background-color: #ccc;
 }
 /* Styling the links */
 nav a {
@@ -222,7 +220,7 @@ nav a {
     font-size:25px;
     text-decoration:none;
 }
-nav ul li ul li:hover { background: #000000; }
+nav ul li ul li:hover { background: #ccc; }
 /* Background color change on Hover */
 nav a:hover {
     background-color: #000000;
@@ -233,7 +231,6 @@ nav ul ul {
     display: none;
     position: absolute;
     /* has to be the same number as the "line-height" of "nav a" */
-    top: 60px;
 }
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
@@ -261,7 +258,7 @@ li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
 /* Media Queries
 --------------------------------------------- */
-@media all and (max-width : 768px) {
+@media all and (max-width : 825px) {
     #logo-main {
         display: block;
         padding: 0;
