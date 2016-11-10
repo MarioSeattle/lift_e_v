@@ -8,6 +8,7 @@
     <!--for img slider start-->
     <link href="css/ideal-image-slider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/nav.css">
 
 
     <!-- Remy Sharp Shim -->
@@ -51,7 +52,38 @@
 
 		</svg></label>
         <input type="checkbox" id="drop" />
-        <?php wp_nav_menu() ?>
+        <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle">Projects</label>
+                <a href="#">Projects</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="#">info</a></li>
+                    <li><a href="#">info</a></li>
+                    <li><a href="#">info</a></li>
+                </ul>
+            </li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">info +</label>
+                <a href="#">Get Involved</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li>
+                        <!-- Second Tier Drop Down -->
+                        <label for="drop-3" class="toggle">Tutorials +</label>
+                        <a href="#">Tutorials</a>
+                        <input type="checkbox" id="drop-3"/>
+                    </li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Links</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
-<!--Header Ends here-->
 </header>
+<!--Header Ends here-->
