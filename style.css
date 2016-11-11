@@ -13,6 +13,8 @@ Text Domain:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,12 +29,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* ----Site wide styles----START */
 
@@ -140,25 +142,25 @@ ol {
 li {
     padding: 7px 0;
     font-family: Arial, sans-serif;
-    color: #555;
+    color: #555;    
 }
 dl {
     padding: 0.5em;
-}
+  }
 dt {
     font-family: Arial, sans-serif;
     font-weight: 600;
     color: #555;
-}
+  }
 dt:after {
     content: ":";
-}
+  }
 dd {
     margin: 5px 0 5px 15px;
     padding: 0 0 0.5em 0;
     font-family: Arial, sans-serif;
     color: #555;
-}
+  }
 /* ----Site wide styles----END */
 /* ----Header styles----START */
 header h1 {
@@ -192,7 +194,7 @@ div.seo h2 {
     text-align: center;
 }
 div.seo {
-    width: 90%;
+   width: 90%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -218,7 +220,7 @@ div.seo {
     position: relative;
     width: 44%;
     z-index: 1;
-    display: inline-block;
+    display: inline-block; 
 }
 
 .cta2 {
@@ -236,73 +238,73 @@ div.seo {
     width: 100%;
 }
 /* ----Home page styles----END */
-/* ----index page styles----START */
+/* ----index page styles----START */  
 
 .postBox{
     margin: 10px;
     display: inline-block;
 }
-
+    
 img.left {
     float: left;
     margin: 0 10px 0 0;
 }
 
-/* ----index page styles----END */
+/* ----index page styles----END */  
 @media all and (max-width: 790px) {
-    /* ----Home page styles----START */
-    #cta-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta {
-        margin: 10px 0;
-    }
-
-
-    /* ----Home page styles----END */
+/* ----Home page styles----START */
+#cta-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.cta {
+    margin: 10px 0;
+ }
 
 
+/* ----Home page styles----END */
+    
 
-    /* ----pages with sidebars styles----START */
+    
+/* ----pages with sidebars styles----START */
 
-    #wrapper{
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-    }
+#wrapper{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    main {
-        float: none;
-        width: 90%;
-    }
+main {
+    float: none;
+    width: 90%;
+}
 
-    sidebar#primary {
-        float: none;
-        width: 90%;
-    }
+sidebar#primary {
+    float: none;
+    width: 90%;
+}
 
-    /* ----pages with sidebars styles----END */
+/* ----pages with sidebars styles----END */
 
 } /*<--END 790px Media query */
 
 @media all and (max-width: 500px) {
-
-    html {
-        padding: 15px;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    main {
-        padding: 0;
-        width: 100%;
-    }
-
+ 
+html {
+    padding: 15px;
+}    
+    
+body {
+    margin: 0;
+}
+    
+main {
+    padding: 0;
+    width: 100%;
+}
+    
 }/*<--END 350px Media query */
 
 
