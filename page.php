@@ -1,15 +1,10 @@
 <?php get_header(); ?>
-
 <main id="page">
-
     <h1>Test-Drive Your CSS</h1>
     <h2>How to Use This File</h2>
     <p>You can test-drive your CSS by viewing the source of this page and copying it into a new HTML file.
-
     <p>Uncomment the &lt;link&gt; tag in the head, and link this page to your CSS style sheet to test whether your CSS selectors are global. Since the elements on this page are not nested inside your container elements, they will be unstyled if your selectors are overly-specific.</p>
-
     <p>Keep in mind that if your stylesheet uses CSS resets (which it should), once you link this page to your stylesheet the browser-default margins and padding will go away, and you will need to add your own margin and padding values back in if you haven't done so already.</p>
-
     <h2>Include a variety of HTML elements</h2>
     <h3>Nested List 1: ol ul</h3>
     <ol>
@@ -88,13 +83,9 @@
     </dl>
 
     <p>Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-
     <p><a href="javascript:;" title="test link">Test link</a>. <strong>Strong text.</strong> <em>Emphasized text.</em></p>
-
 </main>
-
 <sidebar id="primary">
     <?php get_sidebar(); ?>
 </sidebar>
-
 <?php get_footer(); ?>

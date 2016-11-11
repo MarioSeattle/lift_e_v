@@ -6,25 +6,25 @@
                 <div class="footer-list-wrap">
                     <h6 class="ftr-hdr">About</h6>
                     <ul class="ftr-links-sub">
+                        <li><a href="http://www.art.fr" rel="nofollow">Our mission</a></li>
+                        <li><a href="http://www.art.fr" rel="nofollow">Our Story</a></li>
+                        <li><a href="http://www.art.fr" rel="nofollow">Our Partners</a></li>
                     </ul>
                     <h6 class="ftr-hdr">Projects</h6>
                     <ul class="ftr-links-sub">
-                        <li><a href="http://www.art.fr" rel="nofollow">Seattle</a></li>
-                        <li><a href="http://www.art.co.uk" rel="nofollow">Global Initiative</a></li>
+                        <li><a href="http://www.art.fr" rel="nofollow">Project 1</a></li>
+                        <li><a href="http://www.art.co.uk" rel="nofollow">Project 2</a></li>
+                        <li><a href="http://www.art.co.uk" rel="nofollow">Project 3</a></li>
                     </ul>
                 </div>
                 <!--/.footer-list-wrap-->
                 <div class="footer-list-wrap">
                     <h6 class="ftr-hdr">Get Involved</h6>
-                    <!--<ul class="ftr-links-sub">
-                        <li><a href="/help/talktous.html" rel="nofollow">Contact Us</a></li>
-                        <li><a href="/help/placingorders.html" rel="nofollow">Ordering</a></li>
-                        <li><a href="/help/shipping.html" rel="nofollow">Shipping &amp; Delivery</a></li>
-                        <li><a href="/help/shippingreturns.html" rel="nofollow">Returns</a></li>
-                        <li><a href="/help/international-shipping.html" rel="nofollow">International Orders</a></li>
-                        <li><a href="/~/egift-cards/" rel="nofollow">Gift Cards</a></li>
-                        <li><a href="/help/faq.html" rel="nofollow">FAQs</a></li>
-                    </ul>-->
+                    <ul class="ftr-links-sub">
+                        <li><a href="" rel="nofollow">I am a non&dash;profit</a></li>
+                        <li><a href="" rel="nofollow">I am a School</a></li>
+                        <li><a href="" rel="nofollow">I am a parent&#47;student</a></li>
+                    </ul>
                 </div>
                 <div class="footer-list-wrap">
                     <h6 class="ftr-hdr">Blog</h6>
@@ -97,5 +97,17 @@
     </div>
     <!--/.footer-gray-->
 </footer>
+<!-- begin validation buttons -->
+<p class="validation">
+    <a href="http://validator.w3.org/check?uri=referer">
+        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+             width="31" height="32" alt="valid HTML5" />
+    </a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+             alt="Valid CSS3" height="31" width="88" />
+    </a>
+</p>
+<!-- end validation buttons -->
 </body>
 </html>

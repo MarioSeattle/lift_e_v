@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Lift Every Voice Foundation</title>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="initial-scale=1"/>
-    <!--for img slider start-->
-    <link href="css/ideal-image-slider.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/nav.css">
-
-
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+    <!--css starts here-->
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/themes/default.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/themes/ideal-image-slider.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/nav.css" />
+    <!--js-->
+    <script type="text/javascript" src="/js/ideal-image-slider.js"></script>
     <!-- Remy Sharp Shim -->
     <script src="js/html5.js" type="text/javascript"></script>
     <!--[if lt IE 9]>

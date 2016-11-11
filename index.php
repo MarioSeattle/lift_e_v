@@ -1,6 +1,5 @@
 <?php get_header(); ?>
     <main id="home-page">
-
         <!-- Slider and add images START -->
         <div id="slider">
             <a href=''><img src="images/slider-img1.jpg" alt=""></a>
@@ -20,8 +19,6 @@
             slider.start();
         </script>
         <!-- Slider and add images END -->
-
-
         <!--Test-->
         <div class="seo">
             <h2>Lift Every Voice Foundation</h2>
