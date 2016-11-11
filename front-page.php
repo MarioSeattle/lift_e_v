@@ -1,14 +1,4 @@
 <?php include "header.php" ?>
-    <div id='wrapper'>
-        <main id="index">
-
-            <h2>Gateway 2</h2>
-
-            <div class="postBox">
-                <img class="left" src="images/thumbnail.jpg" alt="thumbnail">
-                <a href=""><h3>H3 Sample Heading</h3></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in orci vitae urna bibendum commodo.
-                    Duis congue mauris diam,sed dapibus ex ultrices a. Fusce venenatis <i><a href="">more...</a></i></p>
     <main id="home-page">
 
         <!-- Slider and add images START -->
@@ -18,7 +8,20 @@
             <a href=''><img data-src="images/slider-img3.jpg" src="" alt=""></a>
             <a href=''><img data-src="images/slider-img4.jpg" src="" alt=""></a>
         </div>
+        <!-- Include slider JS file -->
+        <script src="js/ideal-image-slider.js"></script>
+        <!-- Create your slider -->
+        <script>
+            var slider = new IdealImageSlider.Slider({
+                selector: '#slider',
+                interval: 6000,
+                transitionDuration: 1000
+            });
+            slider.start();
+        </script>
         <!-- Slider and add images END -->
+
+
         <!--Test-->
         <div class="seo">
             <h2>Lift Every Voice Foundation</h2>
