@@ -1,8 +1,7 @@
 <?php include "header.php" ?>    
 <div id='wrapper'>
-<main id="page">
+<main class="page">
     <!-- START CONTENT -->
-<div id="content" class="page">
     <h2 class="page-id"><?php the_title(); ?></h2>  
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="postBox" id="post-<?php the_ID(); ?>">   
@@ -11,7 +10,6 @@
 	</div>
    
 	<?php endwhile; endif; ?>  
-</div>
 <!-- END CONTENT -->
 
 </main>

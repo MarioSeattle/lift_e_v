@@ -22,7 +22,7 @@
 <!--Header starts here-->
 <header>
     <h1>
-        <a href="front-page.php">
+        <a href="<?php bloginfo('url'); ?>">
             <span>Lift every Voice foundation</span> <!-- for SEO -->
             <img src="<?php echo get_template_directory_uri(); ?>/images/site-logo.jpg" id="logo-main"
                  alt="Lift Every Voice Foundation Logo" >
