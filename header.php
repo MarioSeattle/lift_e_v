@@ -35,11 +35,18 @@
     </div><!-- wordpress search box -->
 
    <nav>
-        <label for="drop" class="toggle"><img src="images/hamburger-menu.png"></label>
+       <?php wp_nav_menu( array( 
+			'theme_location' => 'main-menu' ,
+			'menu' => 'Main Menu' ,
+			'container'  => 'ul', 
+
+		) ); ?>
+       
+       <!-- <label for="drop" class="toggle"><img src="images/hamburger-menu.png"></label>
         <input type="checkbox" id="drop" />
         <ul class="menu">
             <li>
-               <!-- First Tier Drop Down -->
+               
                 <label for="drop-1" class="toggle">About</label>
                 <a href="#">About</a>
                 <input type="checkbox" id="drop-1"/>
@@ -51,7 +58,7 @@
                 </ul> 
             </li>
             <li>
-                <!-- First Tier Drop Down -->
+                
                 <label for="drop-2" class="toggle">Projects</label>
                 <a href="#">Projects</a>
                 <input type="checkbox" id="drop-2"/>
@@ -62,7 +69,7 @@
                 </ul>
             </li>
             <li>
-                <!-- First Tier Drop Down -->
+                
                 <label for="drop-3" class="toggle">Get Involved</label>
                 <a href="#">Get Involved</a>
                 <input type="checkbox" id="drop-3"/>
@@ -75,7 +82,7 @@
             </li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
+        </ul> -->
     </nav>
 <!--Header Ends here-->
 </header>
