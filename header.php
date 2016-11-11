@@ -12,9 +12,9 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/image-slider/ideal-image-slider.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/nav.css" />
     <!--js-->
-    <script type="text/javascript" src="/js/ideal-image-slider.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/ideal-image-slider.js"></script>
     <!-- Remy Sharp Shim -->
-    <script src="js/html5.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/html5.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <![endif]-->
 </head>
