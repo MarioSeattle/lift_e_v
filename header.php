@@ -17,14 +17,6 @@
     <script src="js/html5.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <![endif]-->
-    <script>
-        var slider = new IdealImageSlider.Slider({
-            selector: '#slider',
-            interval: 6000,
-            transitionDuration: 1000
-        });
-        slider.start();
-    </script>
 </head>
 <body>
 <!--Header starts here-->
@@ -32,7 +24,8 @@
     <h1>
         <a href="front-page.php">
             <span>Lift every Voice foundation</span> <!-- for SEO -->
-            <img src="<?php echo get_template_directory_uri(); ?>/images/site-logo.jpg" id="logo-main" alt="Lift Every Voice Foundation Logo" >
+            <img src="<?php echo get_template_directory_uri(); ?>/images/site-logo.jpg" id="logo-main"
+                 alt="Lift Every Voice Foundation Logo" >
         </a>
     </h1>
     <img src="<?php echo get_template_directory_uri(); ?>/images/donate-btn.jpg" id="dnt-btn" alt="Donate button" >

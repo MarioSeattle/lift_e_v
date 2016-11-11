@@ -3,22 +3,11 @@
 
         <!-- Slider and add images START -->
         <div id="slider">
-            <a href=''><img src="images/slider-img1.jpg" alt=""></a>
-            <a href=''><img data-src="images/slider-img2.jpg" src="" alt=""></a>
-            <a href=''><img data-src="images/slider-img3.jpg" src="" alt=""></a>
-            <a href=''><img data-src="images/slider-img4.jpg" src="" alt=""></a>
+            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img1.jpg" alt=""></a>
+            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img2.jpg" alt=""></a>
+            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img3.jpg" alt=""></a>
+            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img4.jpg" alt=""></a>
         </div>
-        <!-- Include slider JS file -->
-        <script src="js/ideal-image-slider.js"></script>
-        <!-- Create your slider -->
-        <script>
-            var slider = new IdealImageSlider.Slider({
-                selector: '#slider',
-                interval: 6000,
-                transitionDuration: 1000
-            });
-            slider.start();
-        </script>
         <!-- Slider and add images END -->
 
 
@@ -31,21 +20,21 @@
         </div>
         <div id="cta-row">
             <div class="cta" id="cta1">
-                <img class="cta-img" src="images/cta-pic1.jpg" alt="">
+                <img class="cta-img" src="<?php echo get_template_directory_uri(); ?>/images/cta-pic1.jpg" alt="">
                 <div class="cta-content">
                     <h3>Headline 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
                 </div>
             </div>
             <div class="cta" id="cta2">
-                <img class="cta-img" src="images/cta-pic2.jpg" alt="">
+                <img class="cta-img" src="<?php echo get_template_directory_uri(); ?>/images/cta-pic2.jpg"  alt="">
                 <div class="cta-content">
                     <h3>Headline 2</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
                 </div>
             </div>
             <div class="cta" id="cta3">
-                <img class="cta-img" src="images/cta-pic3.jpg" alt="">
+                <img class="cta-img" src="<?php echo get_template_directory_uri(); ?>/images/cta-pic3.jpg"  alt="">
                 <div class="cta-content">
                     <h3>Headline 3</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
