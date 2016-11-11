@@ -99,7 +99,7 @@ li > a:only-child:after { content: ''; }
     nav {
         margin: 0;
     }
-    /* Hide the navigation menu by default */
+    /* Hide the navigation menu by image-slider */
     /* Also hide the  */
     .toggle + a,
     .menu {
