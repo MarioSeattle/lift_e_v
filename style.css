@@ -1,5 +1,5 @@
 /*
-Theme Name: MyFirstRepo
+Theme Name: lift_e_v
 Theme URI: http://
 Author: Fall 2016
 Author URI:
@@ -13,8 +13,6 @@ Text Domain:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,8 +66,6 @@ main#home-page {
 main#index-2 {
     text-align: center;
 }
-
-
 
 
 sidebar {

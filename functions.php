@@ -51,6 +51,10 @@ register_sidebars(array(
     'before_title' => '<h2>',
     'after_title' => '</h2>',
 ));
+//Register My Menus
+register_nav_menus(array(
+    'main-menu' => __( 'Main' ),
+));
 
 ?>
 
