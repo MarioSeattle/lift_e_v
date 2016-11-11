@@ -8,8 +8,8 @@
     <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
     <!--css starts here-->
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/themes/default.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/themes/ideal-image-slider.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/image-slider/default.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/image-slider/ideal-image-slider.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/nav.css" />
     <!--js-->
     <script type="text/javascript" src="/js/ideal-image-slider.js"></script>
@@ -17,12 +17,20 @@
     <script src="js/html5.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <![endif]-->
+    <script>
+        var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            interval: 6000,
+            transitionDuration: 1000
+        });
+        slider.start();
+    </script>
 </head>
 <body>
 <!--Header starts here-->
 <header>
     <h1>
-        <a href="index.php">
+        <a href="front-page.php">
             <span>Lift every Voice foundation</span> <!-- for SEO -->
             <img src="images/site-logo.jpg" id="logo-main" alt="Lift Every Voice Foundation Logo" >
         </a>

@@ -1,9 +1,9 @@
 /*
-Theme Name: lift_e_v
+Theme Name: MyFirstRepo
 Theme URI: http://
-Author: Advance Web Dev Fall 2016
+Author: Fall 2016
 Author URI:
-Description: The lift every voice foundation
+Description: Mike's class
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,6 +13,8 @@ Text Domain:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,17 +53,24 @@ body {
     border: 1px solid blue;
 }
 
+main {
+    width: 61.5%;
+    float: left;
+    border: 1px solid black;
+    padding: 0 20px;
+}
+
 main#home-page {
     width: 100%;
     padding: 0;
 }
 
-main {
-    width: 61.5%;
-    float: left;
-    border: 1px solid black;
-    padding: 20px;
+main#index-2 {
+    text-align: center;
 }
+
+
+
 
 sidebar {
     width: 29.5%;
@@ -74,15 +83,19 @@ sidebar {
 h1 a span {
     display: none;
 }
+
 h2 {
     font-family: Arial;
     font-size: 3em;
     color: #000;
+    margin: 15px 0;
 }
+
 h3 {
     font-family: Arial;
     font-size: 2.25em;
     color: #000;
+    margin: 0;
 }
 h4 {
     font-family: Arial;
@@ -157,6 +170,7 @@ header h1 {
 #dnt-btn{
     float: right;
     margin: 18px 29px 0 0;
+    width: 26%;
 }
 #search-bx {
     float: right;
@@ -173,185 +187,7 @@ header h1 {
     height: auto;
     margin: 20px;
 }
-/*----CP starts here --- */
-.toggle,
-[id^=drop] {
-    display: none;
-}
-/* Giving a background-color to the nav container. */
-nav {
-    background-color: #cccccc;
-    clear: both;
-    display: flex;
-    justify-content: center;
-    margin: 0 0 20px;
-    padding: 0;
 
-}
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-nav:after {
-    content:"";
-    display:table;
-    clear:both;
-}
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
-nav ul {
-    float: right;
-    padding:0;
-    margin:0;
-    list-style: none;
-    position: relative;
-    z-index: 2;
-}
-/* Positioning the navigation items inline */
-nav ul li {
-    margin: 0 2vw 0px;
-    display:inline-block;
-    float: left;
-    background-color: #ccc;
-}
-/* Styling the links */
-nav a {
-    display:block;
-    padding:10px 15px 5px 5px;
-    color:#FFF;
-    font-size:25px;
-    text-decoration:none;
-}
-nav ul li ul li:hover { background: #ccc; }
-/* Background color change on Hover */
-nav a:hover {
-    background-color: #000000;
-}
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
-nav ul ul {
-    display: none;
-    position: absolute;
-    /* has to be the same number as the "line-height" of "nav a" */
-}
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-    display:inherit;
-}
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-    width:170px;
-    float:none;
-    display:list-item;
-    position: relative;
-}
-/* Second, Third and more Tiers
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
-nav ul ul ul li {
-    position: relative;
-    top:-60px;
-    /* has to be the same number as the "width" of "nav ul ul li" */
-    left:170px;
-}
-/* Change ' +' in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
-/* Media Queries
---------------------------------------------- */
-@media all and (max-width : 825px) {
-    #logo-main {
-        display: block;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-        float: none;
-    }
-    nav {
-        margin: 0;
-    }
-    /* Hide the navigation menu by image-slider */
-    /* Also hide the  */
-    .toggle + a,
-    .menu {
-        display: none;
-    }
-    /* Styling the toggle lable */
-    .toggle {
-        display: block;
-        background-color: #888;
-        padding:14px 20px;
-        color:#FFF;
-        font-size:17px;
-        text-decoration:none;
-        border:none;
-    }
-    .toggle:hover {
-        background-color: #000000;
-    }
-    /* Display Dropdown when clicked on Parent Lable */
-    [id^=drop]:checked + ul {
-        display: block;
-    }
-    /* Change menu item's width to 100% */
-    nav ul li {
-        display: block;
-        width: 100%;
-    }
-    nav ul ul .toggle,
-    nav ul ul a {
-        padding: 0 40px;
-    }
-    nav ul ul ul a {
-        padding: 0 80px;
-    }
-    nav a:hover,
-    nav ul ul ul a {
-        background-color: #000000;
-    }
-    nav ul li ul li .toggle,
-    nav ul ul a,
-    nav ul ul ul a{
-        padding:14px 20px;
-        color:#FFF;
-        font-size:17px;
-    }
-    nav ul li ul li .toggle,
-    nav ul ul a {
-        background-color: #212121;
-    }
-    /* Hide Dropdowns by Default */
-    nav ul ul {
-        float: none;
-        position:static;
-        color: #ffffff;
-        /* has to be the same number as the "line-height" of "nav a" */
-    }
-    /* Hide menus on hover */
-    nav ul ul li:hover > ul,
-    nav ul li:hover > ul {
-        display: none;
-    }
-    /* Fisrt Tier Dropdown */
-    nav ul ul li {
-        display: block;
-        width: 100%;
-    }
-    nav ul ul ul li {
-        position: static;
-        /* has to be the same number as the "width" of "nav ul ul li" */
-    }
-}
-
-
-
-
-@media all and (max-width : 330px) {
-    nav ul li {
-        display:block;
-        width: 94%;
-    }
-}
-/*----CP ends here --- */
 /* ----Header styles----END */
 /* ----Home page styles----START */
 div.seo h2 {
@@ -371,6 +207,7 @@ div.seo {
     bottom: 4px;
     background: rgba(113,113,113,0.4);
     padding: 2% 5%;
+    text-align: left;
 }
 #cta-row {
     display: flex;
@@ -379,14 +216,41 @@ div.seo {
 }
 .cta {
     max-width: 300px;
+    min-width: 250px;
     position: relative;
-    width: 100%;
+    width: 44%;
     z-index: 1;
+    display: inline-block;
 }
-.cta img {
+
+.cta2 {
+    max-width: 300px;
+    min-width: 250px;
+    position: relative;
+    width: 44%;
+    z-index: 1;
+    display: inline-block;
+    margin: 2%;
+}
+
+.cta img,
+.cta2 img{
     width: 100%;
 }
 /* ----Home page styles----END */
+/* ----index page styles----START */
+
+.postBox{
+    margin: 10px;
+    display: inline-block;
+}
+
+img.left {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+/* ----index page styles----END */
 @media all and (max-width: 790px) {
     /* ----Home page styles----START */
     #cta-row {
@@ -394,12 +258,58 @@ div.seo {
         flex-direction: column;
         align-items: center;
     }
+
     .cta {
         margin: 10px 0;
     }
-}
-/* ----Home page styles----END */
 
+
+    /* ----Home page styles----END */
+
+
+
+    /* ----pages with sidebars styles----START */
+
+    #wrapper{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        float: none;
+        width: 90%;
+    }
+
+    sidebar#primary {
+        float: none;
+        width: 90%;
+    }
+
+    /* ----pages with sidebars styles----END */
+
+} /*<--END 790px Media query */
+
+@media all and (max-width: 500px) {
+
+    html {
+        padding: 15px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    main {
+        padding: 0;
+        width: 100%;
+    }
+
+}/*<--END 350px Media query */
+
+
+
+/* Footer styles ----START */
 footer {
     clear: both;
 }
@@ -660,60 +570,6 @@ footer {
     background-position: -339px -107px;
     width: 57px;
 }
-/*Hamburger*/
-.svg-menu-toggle {
-    fill: white;
-    pointer-events: all; //needs to be there so the hover works
-cursor: pointer;
-.bar {
-    -webkit-transform: rotate(0) translateY(0) translateX(0);
-    transform: rotate(0) translateY(0) translateX(0);
-    opacity: 1;
-    -webkit-transform-origin: 20px 10px;
-    transform-origin: 20px 10px;
-    -webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
-    transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
-}
-.bar:nth-of-type(1) {
-    -webkit-transform-origin: 20px 10px;
-    transform-origin: 20px 10px;
-}
-.bar:nth-of-type(3) {
-    -webkit-transform-origin: 20px 20px;
-    transform-origin: 20px 20px;
-}
-}
-
-.svg-menu-toggle:hover {
-.bar:nth-of-type(1) {
-    -webkit-transform: rotate(-45deg) translateY(0) translateX(0);
-    transform: rotate(-45deg) translateY(0) translateX(0);
-}
-.bar:nth-of-type(2) {
-    opacity: 0;
-}
-.bar:nth-of-type(3) {
-    -webkit-transform: rotate(45deg) translateY(0em) translateX(0em);
-    transform: rotate(45deg) translateY(0em) translateX(0em);
-}
-}
-
-.inline-svg {
-    text-align:inherit;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Footer styles ----END */
 
 
