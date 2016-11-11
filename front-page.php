@@ -8,8 +8,17 @@
             <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img3.jpg" alt=""></a>
             <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img4.jpg" alt=""></a>
         </div>
+        <!-- Slider and add images END -->  
+        <!-- Create your slider -->
+        <script>
+        var slider = new IdealImageSlider.Slider({
+        selector: '#slider',
+        interval: 6000,
+        transitionDuration: 1000
+        });
+        slider.start();
+            </script>
         <!-- Slider and add images END -->
-
 
         <!--Test-->
         <div class="seo">
