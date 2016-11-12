@@ -1,5 +1,5 @@
-<?php get_header(); ?>
-    <div id='wrapper'>
+<?php include "header.php" ?>    
+<div id='wrapper'>
     
 <!-- START CONTENT -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -28,9 +28,9 @@
 
 <sidebar id="primary">
 <!-- START SIDEBAR -->
-<?php get_sidebar(); ?>
+<?php get_sidebar(primary); ?>
 <!-- END SIDEBAR --> 
 </sidebar>
     
 </div>
-<?php get_footer(); ?>
+<?php include "footer.php" ?>

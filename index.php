@@ -1,5 +1,5 @@
-<?php get_header(); ?>
-    <div id='wrapper'>
+<?php include "header.php" ?>    
+<div id='wrapper'>
 <main id="index">
      <h2 class="page-id"><?php the_title(); ?></h2>
 
@@ -29,10 +29,16 @@
 </main><!-- END CONTENT -->
 
 <sidebar id="primary">
+<<<<<<< HEAD
 
 <?php get_sidebar(primary); ?>
 
+=======
+<!-- START SIDEBAR -->
+<?php get_sidebar(primary); ?>
+<!-- END SIDEBAR --> 
+>>>>>>> parent of b8313d0... Merge remote-tracking branch 'origin/master'
 </sidebar>
     
 </div>
-<?php get_footer(); ?>
+<?php include "footer.php" ?>
