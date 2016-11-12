@@ -16,7 +16,7 @@
 
         <sidebar id="primary">
             <!-- START SIDEBAR -->
-            <?php get_sidebar(primary); ?>
+            <?php get_sidebar(); ?>
             <!-- END SIDEBAR -->
         </sidebar>
 
