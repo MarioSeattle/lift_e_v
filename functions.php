@@ -52,6 +52,8 @@ function my_register_sidebars() {
 		)
 	);
 		
+  
+    
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
 //Add Thumbnails Support
@@ -61,6 +63,10 @@ add_theme_support('post-thumbnails');
 //Register My Menus
 register_nav_menus(array(
     'main-menu' => __( 'Main' ),
+));
+
+register_nav_menus(array(
+    'footer' => __( 'footer' ),
 ));
 
 ?>
