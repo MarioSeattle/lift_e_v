@@ -1,5 +1,5 @@
-<?php include "header.php" ?>    
-<div id='wrapper'>
+<?php get_header(); ?>
+    <div id='wrapper'>
 <main id="index">
      <h2 class="page-id"><?php the_title(); ?></h2>
 
@@ -36,4 +36,4 @@
 
 </sidebar>
 </div>
-<?php include "footer.php" ?>
+<?php get_footer(); ?>
