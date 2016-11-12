@@ -29,14 +29,9 @@
 </main><!-- END CONTENT -->
 
 <sidebar id="primary">
-<<<<<<< HEAD
-<!-- START SIDEBAR -->
-<?php get_sidebar(primary); ?>
-<!-- END SIDEBAR --> 
-=======
-    <?php get_sidebar(); ?>
 
->>>>>>> origin/master
+<?php get_sidebar(primary); ?>
+
 </sidebar>
     
 </div>
