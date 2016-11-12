@@ -1,5 +1,5 @@
-<?php include "header.php" ?>    
-<div id='wrapper'>
+<?php get_header(); ?>
+    <div id='wrapper'>
 <main id="index">
      <h2 class="page-id"><?php the_title(); ?></h2>
 
@@ -29,10 +29,15 @@
 </main><!-- END CONTENT -->
 
 <sidebar id="primary">
+<<<<<<< HEAD
 <!-- START SIDEBAR -->
 <?php get_sidebar(primary); ?>
 <!-- END SIDEBAR --> 
+=======
+    <?php get_sidebar(); ?>
+
+>>>>>>> origin/master
 </sidebar>
     
 </div>
-<?php include "footer.php" ?>
+<?php get_footer(); ?>
