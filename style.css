@@ -310,6 +310,19 @@ main {
 
 
 /* Footer styles ----START */
+
+footer ul.menu {
+    list-style: none;
+}
+
+footer li.menu-item {
+    list-style: none;
+}
+
+ul#menu-footer.menu { /*This keep the footer from displaying to none in mobile view */
+    display: inherit;
+}
+
 footer {
     clear: both;
 }
