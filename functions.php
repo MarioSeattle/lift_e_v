@@ -39,8 +39,12 @@ add_filter( 'widget_text', 'do_shortcode');
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-		  'main-nav' => 'Main Nav',
-          'footer' => 'Footer',
+            'main-nav' => 'Main Nav',
+            'footer1' => 'Footer1',
+            'footer2' => 'Footer2',
+            'foote3' => 'Footer2'
+            
+        
         
           
 		)
