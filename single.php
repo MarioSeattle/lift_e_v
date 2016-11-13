@@ -1,6 +1,5 @@
-<?php include "header.php" ?>    
-<div id='wrapper'>
-    
+<?php get_header() ?>
+    <div id='wrapper'>
 <!-- START CONTENT -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <main id="content" class="single">
@@ -13,12 +12,10 @@
     </p>
     <?php the_content('More &raquo;'); ?>
     <?php wp_link_pages(); ?>
-
 		<nav class="post-nav">            
 			<div class="alignleft"><?php previous_post_link('&laquo; %link', '%title', false) ?></div>
 			<div class="alignright"><?php next_post_link('%link &raquo;', '%title', false) ?></div>
 		</nav>
-    
     <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
 	<?php comments_template(); ?>
     <?php endwhile; else: ?>
@@ -31,6 +28,5 @@
 <?php get_sidebar(primary); ?>
 <!-- END SIDEBAR --> 
 </sidebar>
-    
 </div>
-<?php include "footer.php" ?>
+<?php get_footer() ?>

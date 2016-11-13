@@ -1,5 +1,5 @@
-<?php include "header.php" ?>    
-<div id='wrapper'>
+<?php get_header() ?>
+    <div id='wrapper'>
 <main class="page">
     <!-- START CONTENT -->
     <h2 class="page-id"><?php the_title(); ?></h2>  
@@ -11,14 +11,11 @@
    
 	<?php endwhile; endif; ?>  
 <!-- END CONTENT -->
-
 </main>
-
 <sidebar id="primary">
 <!-- START SIDEBAR -->
 <?php get_sidebar(primary); ?>
-<!-- END SIDEBAR --> 
+<!-- END SIDEBAR -->
 </sidebar>
-
 </div>
-<?php include "footer.php" ?>
+<?php get_footer() ?>
