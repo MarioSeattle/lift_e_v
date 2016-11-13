@@ -26,10 +26,12 @@ function add_theme_scripts() {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+
 // Remove WP Version for security
 function remove_wp_version() {
     return '';
 }
+
 function new_excerpt_more($more) {
     return '...';
 }
@@ -65,15 +67,11 @@ register_nav_menus(array(
     'main-menu' => __( 'Main' ),
 ));
 
+
 register_nav_menus(array(
     'footer' => __( 'footer' ),
 ));
 
 ?>
-
-
-
-
-
 
 
