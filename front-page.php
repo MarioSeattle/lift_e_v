@@ -1,4 +1,6 @@
-<?php get_header() ?>
+
+<?php get_header(); ?>
+
     <main id="home-page">
         <!-- Slider and add images START -->
         <div id="slider">
@@ -49,4 +51,5 @@
             </div>
         </div>
     </main>
-<?php get_footer() ?>
+
+<?php get_footer(); ?>

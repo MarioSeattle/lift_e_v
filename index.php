@@ -1,5 +1,6 @@
-<?php get_header() ?>
-<div id='wrapper'>
+
+<?php get_header(); ?>
+    <div id='wrapper'>
 <main id="index">
      <h2 class="page-id"><?php the_title(); ?></h2>
 <?php if (have_posts()) : ?>
@@ -25,8 +26,11 @@
 </main><!-- END CONTENT -->
     <!-- START SIDEBAR -->
 <sidebar id="primary">
+
 <?php get_sidebar(primary); ?>
-<!-- END SIDEBAR -->
+
 </sidebar>
 </div>
-<?php get_footer() ?>
+
+<?php get_footer(); ?>
+

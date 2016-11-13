@@ -1,41 +1,52 @@
 <?php
-/*
-Theme Name: lift_e_v
-Theme URI: http://
-Author: Advance Web Dev Fall 2016
-Author URI:
-Description: The lift every voice foundation
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
-Text Domain:
-*/
-function add_theme_scripts() {
-    wp_enqueue_style( 'style', get_stylesheet_uri() );
+// support HTML5 semantic markup
+$args = array(
+	'search-form',
+	'comment-form',
+	'comment-list',
+	'gallery',
+	'caption'
+);
+add_theme_support( 'html5', $args );
 
-    wp_enqueue_style( 'default', get_template_directory_uri() . '/css/nav.css', array(), '1.1', 'all');
+// add RSS feed links to <head> tag
+add_theme_support( 'automatic-feed-links' );
 
-    wp_enqueue_style( 'default', get_template_directory_uri() . '/css/themes/default.css', array(), '1.1', 'all');
-    
-    wp_enqueue_style( 'ideal-image-slider', get_template_directory_uri() . '/css/themes/ideal-image-slider.css', array(), '1.1', 'all');
+//Allows featured image ability
+add_theme_support( 'post-thumbnails' ); 
 
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/ideal-mage-slider.js', array ( 'jquery' ), 1.1, true);
-
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-        wp_enqueue_script( 'comment-reply' );
-    }
+//for security, hide wp version in web pages and feeds
+function remove_version_info() {
+     return '';
 }
+add_filter('the_generator', 'remove_version_info');
 
-// Remove WP Version for security
-function remove_wp_version() {
-    return '';
+// set Media Library image link default to "none"
+function wpb_imagelink_setup() {
+	$image_set = get_option( 'image_default_link_type' );
+	
+	if ($image_set !== 'none') {
+		update_option('image_default_link_type', 'none');
+	}
 }
+add_action('admin_init', 'wpb_imagelink_setup', 10);
 
-function new_excerpt_more($more) {
-    return '...';
-}
+// use shortcodes in widgets
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
 
+//Register custom menus
+if ( function_exists( 'register_nav_menus' ) ) {
+	register_nav_menus(
+		array(
+		  'main-nav' => 'Main Nav',
+          'footer' => 'Footer',
+        
+          
+		)
+	);
+}   
+   
 //Register sidebars
 add_action( 'widgets_init', 'my_register_sidebars' );
 
@@ -46,32 +57,25 @@ function my_register_sidebars() {
 		array(
 			'id' => 'primary',
 			'name' => __( 'Primary Sidebar' ),
-            'description' => __( 'For blog categories, and twitter' ),
+            'description' => __( 'For location, hours' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title">',
-			'after_title' => '</h4>'
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
 		)
 	);
-		
-  
-    
+	
+	
+	
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
-//Add Thumbnails Support
-add_theme_support('post-thumbnails');
-//
-
-//Register My Menus
-register_nav_menus(array(
-    'main-menu' => __( 'Main' ),
-));
 
 
-register_nav_menus(array(
-    'footer' => __( 'footer' ),
-));
-
-?>
-
-
+// Remove rel attribute from the category list
+function remove_category_list_rel($output)
+{
+  $output = str_replace(' rel="category tag"', '', $output);
+  return $output;
+}
+add_filter('wp_list_categories', 'remove_category_list_rel');
+add_filter('the_category', 'remove_category_list_rel');

@@ -1,5 +1,7 @@
-<?php get_header() ?>
-    <div id='wrapper'>
+
+<?php get_header(); ?>
+    
+<div id='wrapper'>
 <main class="page">
     <!-- START CONTENT -->
     <h2 class="page-id"><?php the_title(); ?></h2>  
@@ -18,4 +20,7 @@
 <!-- END SIDEBAR -->
 </sidebar>
 </div>
-<?php get_footer() ?>
+
+
+<?php get_footer(); ?>
+
