@@ -30,8 +30,7 @@
     </h1>
     <img src="<?php echo get_template_directory_uri(); ?>/images/donate-btn.jpg" id="dnt-btn" alt="Donate button" >
     <div id="search-bx">
-        <input type="text" name="search" value="">
-        <input type="button" value="search">
+       <?php get_search_form() ?>
     </div><!-- wordpress search box -->
 
    <nav>
@@ -43,9 +42,6 @@
 			'container'  => 'ul', 
 
 		) ); ?>
-       
-       
-        
     </nav>
 <!--Header Ends here-->
 </header>
