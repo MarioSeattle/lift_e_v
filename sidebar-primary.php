@@ -1,4 +1,4 @@
-<aside id="sidebar-primary">
+
 
 <?php if ( is_active_sidebar( 'primary' ) ) : ?>
     
@@ -8,4 +8,3 @@
 
     <?php endif; ?>
     
-</aside>
