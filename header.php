@@ -27,8 +27,9 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/site-logo.jpg" id="logo-main"
                  alt="Lift Every Voice Foundation Logo" >
         </a>
+        <?php if ( !dynamic_sidebar('donation') ) : ?>
+        <?php endif; ?>
     </h1>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/donate-btn.jpg" id="dnt-btn" alt="Donate button" >
     <div id="search-bx">
        <?php get_search_form() ?>
     </div><!-- wordpress search box -->

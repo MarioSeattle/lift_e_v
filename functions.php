@@ -42,10 +42,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
             'main-nav' => 'Main Nav',
             'footer1' => 'Footer1',
             'footer2' => 'Footer2',
-            'foote3' => 'Footer2'
-            
-        
-        
+            'footer3' => 'Footer3'
           
 		)
 	);
@@ -55,6 +52,17 @@ if ( function_exists( 'register_nav_menus' ) ) {
 add_action( 'widgets_init', 'my_register_sidebars' );
 
 function my_register_sidebars() {
+    /* Register donation. */
+    register_sidebar(
+        array(
+            'id' => 'donation',
+            'name' => __( 'donation' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        )
+    );
 
 	/* Register the primary sidebar. */
 	register_sidebar(
@@ -68,12 +76,8 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
-	
-	
-	
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
-
 
 // Remove rel attribute from the category list
 function remove_category_list_rel($output)
