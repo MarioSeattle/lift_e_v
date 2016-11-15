@@ -28,12 +28,13 @@
                  alt="Lift Every Voice Foundation Logo" >
         </a>
     </h1>
-    <?php if ( !dynamic_sidebar('donation') ) : ?>
-    <?php endif; ?>
-    <div id="search-bx">
-       <?php get_search_form() ?>
-    </div><!-- wordpress search box -->
+    <!-- START SIDEBAR -->
+    <sidebar id="donation">
 
+        <?php if ( !dynamic_sidebar('donation') ) : ?>
+        <?php endif; ?>
+
+    </sidebar>
    <nav>
         <label for="drop" class="toggle"><img src="<?php echo get_template_directory_uri(); ?>/images/hamburger-menu.png"></label>
         <input type="checkbox" id="drop" />

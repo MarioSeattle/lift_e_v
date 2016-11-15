@@ -277,14 +277,18 @@ img.left {
 }
 
 main {
-    float: none;
-    width: 90%;
+    float: left;
+    width: auto;
 }
 
-sidebar#primary {
-    float: none;
-    width: 90%;
+    sidebar#primary {
+    float: right;
+    width: auto;
 }
+    sidebar#donation {
+        float: right;
+        width: auto;
+    }
 
 /* ----pages with sidebars styles----END */
 
