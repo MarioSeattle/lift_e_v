@@ -64,10 +64,15 @@ main#index-2 {
     text-align: center;
 }
 sidebar {
-    width: 29.5%;
-    float: right;
-    border: 1px solid black;
-    padding: 10px;
+     width: 29.5%;
+     float: right;
+     border: 1px solid black;
+     padding: 12px;
+ }
+.widget {
+    max-width: 100%;
+    height: auto;
+    margin-top:20px;
 }
 /* typography - START */
 h1 a span {
@@ -164,16 +169,6 @@ img.alignright {
 header h1 {
     width: 38.5%;
     float: left;
-}
-#dnt-btn{
-    float: right;
-    margin: 18px 29px 0 0;
-    width: 26%;
-}
-#search-bx {
-    float: right;
-    clear: right;
-    margin: 45px 45px 18px 0;
 }
 #logo-main {
     display: block;
@@ -297,8 +292,6 @@ main {
 #wrapper{
     width: 100%;
 }
-    
-    
 }/*<--END 350px Media query */
 /* Footer styles ----START */
 footer ul.menu {
