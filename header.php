@@ -33,7 +33,6 @@
 
         <?php if ( !dynamic_sidebar('donation') ) : ?>
         <?php endif; ?>
-
     </sidebar>
    <nav>
         <label for="drop" class="toggle"><img src="<?php echo get_template_directory_uri(); ?>/images/hamburger-menu.png"></label>
@@ -41,8 +40,7 @@
        <?php wp_nav_menu( array( 
 			'theme_location' => 'main-menu' ,
 			'menu' => 'Main Menu' ,
-			'container'  => 'ul', 
-
+			'container'  => 'ul',
 		) ); ?>
     </nav>
 <!--Header Ends here-->

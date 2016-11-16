@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
     <div id='wrapper'>
 <main id="index">
@@ -26,11 +25,8 @@
 </main><!-- END CONTENT -->
     <!-- START SIDEBAR -->
 <sidebar id="primary">
-
 <?php get_sidebar(primary); ?>
-
 </sidebar>
 </div>
-
 <?php get_footer(); ?>
 

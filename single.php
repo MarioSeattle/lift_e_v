@@ -1,7 +1,5 @@
-
 <?php get_header(); ?>
     <div id='wrapper'>
-    
 <!-- START CONTENT -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <main id="content" class="single">
@@ -24,12 +22,10 @@
     <p>Sorry, no posts matched your criteria.</p>
     <?php endif; ?>
 </main>
-
 <sidebar id="primary">
 <!-- START SIDEBAR -->
 <?php get_sidebar(primary); ?>
 <!-- END SIDEBAR --> 
 </sidebar>
 </div>
-
 <?php get_footer(); ?>

@@ -34,7 +34,6 @@ add_action('admin_init', 'wpb_imagelink_setup', 10);
 // use shortcodes in widgets
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
-
 //Register custom menus
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
@@ -43,11 +42,9 @@ if ( function_exists( 'register_nav_menus' ) ) {
             'footer1' => 'Footer1',
             'footer2' => 'Footer2',
             'footer3' => 'Footer3'
-          
 		)
 	);
-}   
-   
+}
 //Register sidebars
 add_action( 'widgets_init', 'my_register_sidebars' );
 
@@ -63,7 +60,6 @@ function my_register_sidebars() {
             'after_title' => '</h3>'
         )
     );
-
 	/* Register the primary sidebar. */
 	register_sidebar(
 		array(
@@ -76,9 +72,20 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
+    /* Register the primary sidebar. */
+    register_sidebar(
+        array(
+            'id' => 'twitter',
+            'name' => __( 'twitter' ),
+            'description' => __( 'For location, hours' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        )
+    );
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
-
 // Remove rel attribute from the category list
 function remove_category_list_rel($output)
 {

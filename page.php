@@ -1,6 +1,4 @@
-
 <?php get_header(); ?>
-    
 <div id='wrapper'>
 <main class="page">
     <!-- START CONTENT -->
@@ -10,7 +8,6 @@
 		<?php the_content(); ?>
         <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
 	</div>
-   
 	<?php endwhile; endif; ?>  
 <!-- END CONTENT -->
 </main>
@@ -20,7 +17,5 @@
 <!-- END SIDEBAR -->
 </sidebar>
 </div>
-
-
 <?php get_footer(); ?>
 
