@@ -32,7 +32,6 @@
     </h1>
     <!-- START SIDEBAR -->
     <sidebar id="donation">
-
         <?php if ( !dynamic_sidebar('donation') ) : ?>
         <?php endif; ?>
     </sidebar>
