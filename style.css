@@ -247,7 +247,7 @@ img.left {
 }
 /* ----index page styles----END */  
 @media all and (max-width: 790px) {
-/* ----Home page styles----START */
+/* ----Home page Media Q  styles----START */
 #cta-row {
     display: flex;
     flex-direction: column;
@@ -256,20 +256,21 @@ img.left {
 .cta {
     margin: 10px 0;
  }
-/* ----Home page styles----END */
-/* ----pages with sidebars styles----START */
+/* ----Home page Media Q styles----END */
+/* ----pages with sidebars Media Q styles----START */
 #wrapper{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 main {
-    float: left;
-    width: auto;
+    float: none;
+    width: 90%;
 }
     sidebar#primary {
-    float: right;
-    width: auto;
+    float: none;
+    width: 90%;
 }
     sidebar#donation {
         float: right;
@@ -279,7 +280,7 @@ main {
         float: right;
         width: auto;
     }
-/* ----pages with sidebars styles----END */
+/* ----pages with sidebars Media Q styles----END */
 } /*<--END 790px Media query */
 @media all and (max-width: 500px) {
 html {
@@ -292,6 +293,12 @@ main {
     padding: 0;
     width: 100%;
 }
+ 
+#wrapper{
+    width: 100%;
+}
+    
+    
 }/*<--END 350px Media query */
 /* Footer styles ----START */
 footer ul.menu {
