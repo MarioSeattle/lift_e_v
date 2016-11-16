@@ -151,7 +151,7 @@ function get_featured_case_study($atts) {
 	
 	$caseTitle = $myPosting->post_title; // get title
 	$caseExcerpt = $myPosting->post_excerpt; // get excerpt
-	$caseImage = get_the_post_thumbnail($myPostID, 'thumbnail'); // get featured thumbnail
+	$caseImage = get_the_post_thumbnail($myPostID, 'medium'); // get featured thumbnail
 	$caseLink = get_permalink($myPosting->ID); // get permalink
 	
 	$myCaseStudy = '<a href="'.$caseLink.'">'.$caseImage.'</a>
