@@ -142,6 +142,7 @@ function remove_category_list_rel($output)
 add_filter('wp_list_categories', 'remove_category_list_rel');
 add_filter('the_category', 'remove_category_list_rel');
 
+//New image size, created for CTA, So it's image is to scale.
 add_image_size( 'cta-thumb', 300, 300, true ); //300 pixels wide and tall and crop.
 
 // Get Featured Case Study-grabs page/post and populates into home page cta.
