@@ -65,7 +65,7 @@ function my_register_sidebars() {
 		array(
 			'id' => 'primary',
 			'name' => __( 'Primary Sidebar' ),
-            'description' => __( 'For location, hours' ),
+            'description' => __( 'For Blog catagories' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
@@ -77,7 +77,7 @@ function my_register_sidebars() {
         array(
             'id' => 'twitter',
             'name' => __( 'twitter' ),
-            'description' => __( 'For location, hours' ),
+            'description' => __( 'For Social Media plugin' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
