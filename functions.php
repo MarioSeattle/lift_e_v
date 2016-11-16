@@ -142,6 +142,9 @@ function remove_category_list_rel($output)
 add_filter('wp_list_categories', 'remove_category_list_rel');
 add_filter('the_category', 'remove_category_list_rel');
 
+//New image size, created for CTA, So it's image is to scale.
+add_image_size( 'cta-thumb', 300, 300, true ); //300 pixels wide and tall and crop.
+
 // Get Featured Case Study-grabs page/post and populates into home page cta.
 function get_featured_case_study($atts) {
 	
@@ -151,7 +154,7 @@ function get_featured_case_study($atts) {
 	
 	$caseTitle = $myPosting->post_title; // get title
 	$caseExcerpt = $myPosting->post_excerpt; // get excerpt
-	$caseImage = get_the_post_thumbnail($myPostID, 'thumbnail'); // get featured thumbnail
+	$caseImage = get_the_post_thumbnail($myPostID, 'cta-thumb'); // get featured thumbnail
 	$caseLink = get_permalink($myPosting->ID); // get permalink
 	
 	$myCaseStudy = '<a href="'.$caseLink.'">'.$caseImage.'</a>
