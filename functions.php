@@ -72,12 +72,51 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
-    /* Register the primary sidebar. */
+    /* Register the social sidebar for footer. */
     register_sidebar(
         array(
             'id' => 'twitter',
             'name' => __( 'twitter' ),
-            'description' => __( 'For Social Media plugin' ),
+            'description' => __( 'For Social Media plugin in footer' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        )
+    );
+    
+    /* Register the social sidebar for home-cta1 */
+    register_sidebar(
+        array(
+            'id' => 'home-cta1',
+            'name' => __( 'Home-cta1' ),
+            'description' => __( 'For home page CTA 1' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        )
+    );
+    
+     /* Register the social sidebar for home-cta2 */
+    register_sidebar(
+        array(
+            'id' => 'home-cta2',
+            'name' => __( 'Home-cta2' ),
+            'description' => __( 'For home page CTA 2' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        )
+    );
+    
+     /* Register the social sidebar for home-cta3 */
+    register_sidebar(
+        array(
+            'id' => 'home-cta3',
+            'name' => __( 'Home-cta3' ),
+            'description' => __( 'For home page CTA 3' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
@@ -94,3 +133,27 @@ function remove_category_list_rel($output)
 }
 add_filter('wp_list_categories', 'remove_category_list_rel');
 add_filter('the_category', 'remove_category_list_rel');
+
+// Get Featured Case Study-grabs page/post and populates into home page cta.
+function get_featured_case_study($atts) {
+	
+	$myPostID = intval($atts['id']); // sets the id to pass
+	
+	$myPosting = get_post($myPostID); // gets the post of id passed
+	
+	$caseTitle = $myPosting->post_title; // get title
+	$caseExcerpt = $myPosting->post_excerpt; // get excerpt
+	$caseImage = get_the_post_thumbnail($myPostID, 'thumbnail'); // get featured thumbnail
+	$caseLink = get_permalink($myPosting->ID); // get permalink
+	
+	$myCaseStudy = '<a href="'.$caseLink.'">'.$caseImage.'</a>
+                <div class="cta-content">
+                    <h3><a href="'.$caseLink.'">'.$caseTitle.'</a></h3>
+                    <p>'.$caseExcerpt.'&nbsp;<a href="'.$caseLink.'">Read More&nbsp;&raquo;</a></p></div>'; // write it up...
+	
+	return $myCaseStudy; // ... and return it.
+	
+}
+add_shortcode('casestudy', 'get_featured_case_study'); // create the shortcode for the function
+//
+                

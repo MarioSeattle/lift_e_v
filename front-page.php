@@ -27,25 +27,13 @@
         </div>
         <div id="cta-row">
             <div class="cta" id="cta1">
-                <img class="cta-img" src="<?php echo get_template_directory_uri(); ?>/images/cta-pic1.jpg" alt="">
-                <div class="cta-content">
-                    <h3>Headline 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
-                </div>
+                <?php dynamic_sidebar( 'home-cta1' ); ?>
             </div>
             <div class="cta" id="cta2">
-                <img class="cta-img" src="<?php echo get_template_directory_uri(); ?>/images/cta-pic2.jpg"  alt="">
-                <div class="cta-content">
-                    <h3>Headline 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
-                </div>
+                <?php dynamic_sidebar( 'home-cta2' ); ?>
             </div>
             <div class="cta" id="cta3">
-                <img class="cta-img" src="<?php echo get_template_directory_uri(); ?>/images/cta-pic3.jpg"  alt="">
-                <div class="cta-content">
-                    <h3>Headline 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
-                </div>
+                <?php dynamic_sidebar( 'home-cta3' ); ?>
             </div>
         </div>
     </main>
