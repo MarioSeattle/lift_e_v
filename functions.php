@@ -21,6 +21,14 @@ function remove_version_info() {
 }
 add_filter('the_generator', 'remove_version_info');
 
+//Creates excerps box for pages
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
+
+
+
 // set Media Library image link default to "none"
 function wpb_imagelink_setup() {
 	$image_set = get_option( 'image_default_link_type' );
