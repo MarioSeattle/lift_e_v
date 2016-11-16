@@ -17,6 +17,8 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/html5.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <![endif]-->
+    
+    <?php wp_head(); ?>
 </head>
 <body>
 <!--Header starts here-->
