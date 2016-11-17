@@ -49,7 +49,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
             'main-nav' => 'Main Nav',
             'footer1' => 'Footer1',
             'footer2' => 'Footer2',
-            'footer3' => 'Footer3'
+            'footer3' => 'Footer3',
+            'footer4' => 'Footer4',
 		)
 	);
 }

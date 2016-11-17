@@ -64,11 +64,17 @@ main#index-2 {
     text-align: center;
 }
 sidebar {
-     width: 29.5%;
-     float: right;
-     border: 1px solid black;
-     padding: 12px;
- }
+      width: 29.5%;
+      float: right;
+      border: 1px solid black;
+      padding: 12px;
+  }
+sidebar#twitter {
+    width: 60%;
+    float: right;
+    border: 1px solid black;
+    padding: 12px;
+}
 .widget {
     max-width: 100%;
     height: auto;
@@ -264,9 +270,9 @@ main {
     width: 90%;
 }
     sidebar#primary {
-    float: none;
-    width: 90%;
-}
+        float: none;
+        width: 90%;
+    }
     sidebar#donation {
         float: right;
         width: auto;
@@ -288,7 +294,6 @@ main {
     padding: 0;
     width: 100%;
 }
- 
 #wrapper{
     width: 100%;
 }

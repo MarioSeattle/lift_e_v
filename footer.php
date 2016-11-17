@@ -32,8 +32,17 @@
             <!--/.footer-lists-->
             <!--/.footer-email-->
             <div class="footer-social">
+                <sidebar id="twitter">
+                    <div class="footer-list-wrap">
+                        <?php wp_nav_menu( array(
+                            'theme_location' => 'footer4' ,
+                            'menu' => 'Footer4' ,
+                            'container'  => 'ul',
+                        ) ); ?>
+                    </div>
                 <?php if ( !dynamic_sidebar('twitter') ) : ?>
                 <?php endif; ?>
+                    </sidebar>
             </div>
         </div>
     </div>
