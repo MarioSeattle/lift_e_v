@@ -70,13 +70,14 @@ sidebar {
       padding: 12px;
   }
 sidebar#twitter {
-    width: 60%;
+    width: auto;
     float: right;
     border: 1px solid black;
-    padding: 12px;
+    padding: 60px;
 }
 .widget {
-    max-width: 100%;
+
+    width: auto;
     height: auto;
     margin-top:20px;
 }
@@ -133,7 +134,7 @@ blockquote {
     padding: 0.5em 10px;
 }
 ul {
-    padding: 0px 10px 10px 25px;
+    padding: 0px 1px 10px 25px;
 }
 ol {
     padding: 0px 10px 10px 25px;
