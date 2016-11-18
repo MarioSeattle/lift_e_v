@@ -26,7 +26,9 @@
     <h1>
         <a href="<?php bloginfo('url'); ?>">
             <span>Lift every Voice foundation</span> <!-- for SEO -->
-            <img src="<?php echo get_template_directory_uri(); ?>/images/site-logo.jpg" id="logo-main"
+            
+            <img src="<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id(get_option('page_on_front')), "Full");
+            echo $imgsrc[0]; ?>" id="logo-main"
                  alt="Lift Every Voice Foundation Logo" >
         </a>
     </h1>
