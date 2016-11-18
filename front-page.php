@@ -1,12 +1,7 @@
 <?php get_header(); ?>
     <main id="home-page">
         <!-- Slider and add images START -->
-        <div id="slider">
-            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img1.jpg" alt=""></a>
-            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img2.jpg" alt=""></a>
-            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img3.jpg" alt=""></a>
-            <a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img4.jpg" alt=""></a>
-        </div>
+        <?php add_flexslider(); ?>
         <!-- Slider and add images END -->  
         <!-- Create your slider -->
         <script>

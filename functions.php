@@ -168,4 +168,31 @@ function get_featured_page($atts) {
 }
 add_shortcode('featuredPage', 'get_featured_page'); // create the shortcode for the function
 //
+
+// Add a Flexslider Gallery	
+function add_flexslider() {
+	
+	global $post; // don't forget to make this a global variable inside your function
+	$attachments = get_children(array('post_parent' => $post->ID, 'order' => 'ASC', 'orderby' => 'menu_order',  'post_type' => 'attachment', 'post_mime_type' => 'image',));
+	if ($attachments) { // see if there are images attached to posting
+	
+    
+		
+		echo '<div id="slider">';
+		
+		foreach ( $attachments as $attachment ) { // create the list items for images with captions
+		    
+            //echo wp_get_attachment_link($attachment->ID, 'full' );
+            echo  '<a href="';
+            echo  get_post_field('post_content', $attachment->ID);
+            echo  '">'; // get image description field
+            echo wp_get_attachment_image($attachment->ID, 'full'); // get image size large
+            echo '</a>';
+		}
+	
+		echo '</div>';
+	
+	} // end see if images attachmed
+} 
+ /*<a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img1.jpg" alt=""></a>*/
                 
