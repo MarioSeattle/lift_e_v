@@ -146,8 +146,8 @@ add_filter('the_category', 'remove_category_list_rel');
 //New image size, created for CTA, So it's image is to scale.
 add_image_size( 'cta-thumb', 300, 300, true ); //300 pixels wide and tall and crop.
 
-// Get Featured Page-grabs page/post and populates into home page cta.
-function get_featured_page($atts) {
+// Get Featured Case Study-grabs page/post and populates into home page cta.
+function get_featured_case_study($atts) {
 	
 	$myPostID = intval($atts['id']); // sets the id to pass
 	
@@ -158,15 +158,15 @@ function get_featured_page($atts) {
 	$caseImage = get_the_post_thumbnail($myPostID, 'cta-thumb'); // get featured thumbnail
 	$caseLink = get_permalink($myPosting->ID); // get permalink
 	
-	$myFeaturePage = '<a href="'.$caseLink.'">'.$caseImage.'</a>
+	$myCaseStudy = '<a href="'.$caseLink.'">'.$caseImage.'</a>
                 <div class="cta-content">
                     <h3><a href="'.$caseLink.'">'.$caseTitle.'</a></h3>
                     <p>'.$caseExcerpt.'&nbsp;<a href="'.$caseLink.'">Read More&nbsp;&raquo;</a></p></div>'; // write it up...
 	
-	return $myFeaturePage; // ... and return it.
+	return $myCaseStudy; // ... and return it.
 	
 }
-add_shortcode('featuredPage', 'get_featured_page'); // create the shortcode for the function
+add_shortcode('casestudy', 'get_featured_case_study'); // create the shortcode for the function
 //
 
 // Add a Flexslider Gallery	

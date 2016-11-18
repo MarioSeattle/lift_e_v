@@ -134,7 +134,7 @@ blockquote {
     padding: 0.5em 10px;
 }
 ul {
-    padding: 0px 1px 10px 25px;
+   
 }
 ol {
     padding: 0px 10px 10px 25px;
@@ -346,7 +346,7 @@ footer {
 }
 @media only screen and (min-width: 768px) {
     .footer-list-wrap {
-        width: 25%;
+
     }
 }
 .ftr-links-sub {
