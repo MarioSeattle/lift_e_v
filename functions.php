@@ -146,8 +146,8 @@ add_filter('the_category', 'remove_category_list_rel');
 //New image size, created for CTA, So it's image is to scale.
 add_image_size( 'cta-thumb', 300, 300, true ); //300 pixels wide and tall and crop.
 
-// Get Featured Case Study-grabs page/post and populates into home page cta.
-function get_featured_case_study($atts) {
+// Get Featured Page-grabs page/post and populates into home page cta.
+function get_featured_page($atts) {
 	
 	$myPostID = intval($atts['id']); // sets the id to pass
 	
@@ -158,14 +158,41 @@ function get_featured_case_study($atts) {
 	$caseImage = get_the_post_thumbnail($myPostID, 'cta-thumb'); // get featured thumbnail
 	$caseLink = get_permalink($myPosting->ID); // get permalink
 	
-	$myCaseStudy = '<a href="'.$caseLink.'">'.$caseImage.'</a>
+	$myFeaturePage = '<a href="'.$caseLink.'">'.$caseImage.'</a>
                 <div class="cta-content">
                     <h3><a href="'.$caseLink.'">'.$caseTitle.'</a></h3>
                     <p>'.$caseExcerpt.'&nbsp;<a href="'.$caseLink.'">Read More&nbsp;&raquo;</a></p></div>'; // write it up...
 	
-	return $myCaseStudy; // ... and return it.
+	return $myFeaturePage; // ... and return it.
 	
 }
-add_shortcode('casestudy', 'get_featured_case_study'); // create the shortcode for the function
+add_shortcode('featuredPage', 'get_featured_page'); // create the shortcode for the function
 //
+
+// Add a Flexslider Gallery	
+function add_flexslider() {
+	
+	global $post; // don't forget to make this a global variable inside your function
+	$attachments = get_children(array('post_parent' => $post->ID, 'order' => 'ASC', 'orderby' => 'menu_order',  'post_type' => 'attachment', 'post_mime_type' => 'image',));
+	if ($attachments) { // see if there are images attached to posting
+	
+    
+		
+		echo '<div id="slider">';
+		
+		foreach ( $attachments as $attachment ) { // create the list items for images with captions
+		    
+            //echo wp_get_attachment_link($attachment->ID, 'full' );
+            echo  '<a href="';
+            echo  get_post_field('post_content', $attachment->ID);
+            echo  '">'; // get image description field
+            echo wp_get_attachment_image($attachment->ID, 'full'); // get image size large
+            echo '</a>';
+		}
+	
+		echo '</div>';
+	
+	} // end see if images attachmed
+} 
+ 
                 
