@@ -194,5 +194,5 @@ function add_flexslider() {
 	
 	} // end see if images attachmed
 } 
- /*<a href=''><img src="<?php echo get_template_directory_uri(); ?>/images/slider-img1.jpg" alt=""></a>*/
+ 
                 
