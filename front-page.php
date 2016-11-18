@@ -15,10 +15,7 @@
         <!-- Slider and add images END -->
         <!--Test-->
         <div class="seo">
-            <h2>Lift Every Voice Foundation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed diam quis lacus sodales ultrices ut in neque.
-                Nunc dapibus convallis pellentesque. Pellentesque lacinia enim egestas purus eleifend convallis. Aenean congue consequat
-                lectus vitae aliquet. Etiam finibus, nisl ac dignissim rhoncus, odio nisl vestibulum arcu, vitae feugiat arcu est ut augue. In nibh metus, laoreet a enim non, eleifend vehicula velit. Nam a consectetur nibh.</p>
+            <?php echo get_the_excerpt(); ?>
         </div>
         <div id="cta-row">
             <div class="cta" id="cta1">
