@@ -13,7 +13,7 @@ nav label.toggle img{
 nav { 
 	margin:0;
 	padding: 0;
-	background-color: #bababa;
+	background-color: #fff;
     clear: both;
 }
 
@@ -44,32 +44,43 @@ nav ul {
     z-index: 3;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 	}
 	
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
-    padding: 7px 2%;
+    padding: 7px 0;
 	display:inline-block;
 	float: left;
-	background-color: #bababa;
+	background-color: #fff;
+    width: 100%;
 	}
 
 /* Styling the links */
 nav a {
 	display:block;
 	padding:14px 20px;	
-	color:#000;
+	color:#004e98;
 	font-size:17px;
 	text-decoration:none;
 }
 
+nav ul li:hover {background: #7c1142;}
 
-nav ul li ul li:hover { background: #bababa; }
+
+
+nav ul li ul li:hover { 
+    background: #f4f487; 
+}
+
+nav ul li ul li a:hover { 
+    color: #7c1142; 
+}
 
 /* Background color change on Hover */
-nav a:hover { 
+nav a:focus
+{ 
 	color: #fff; 
 }
 
@@ -93,6 +104,12 @@ nav ul ul li {
 	float:none;
 	display:list-item;
 	position: relative;
+    background-color: #7c1142;
+    
+}
+
+ul li ul li a {
+    color: #fff;
 }
 
 /* Second, Third and more Tiers	
