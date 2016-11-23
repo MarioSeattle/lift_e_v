@@ -67,6 +67,7 @@ header {
 
 sidebar#donation {
     text-align: right;
+    width: 30%;
 }
 
 /* ----Header styles----END */
@@ -99,12 +100,21 @@ sidebar#twitter {
     border: 1px solid black;
     padding: 60px;
 }
-.widget {
-
+.widget_paypal_donations,
+.widget_search {
     width: auto;
     height: auto;
     margin-top:20px;
 }
+
+div.paypal-donations input {
+    width: 69%;
+}
+
+.widget_search {
+    margin-right: 9px;
+}
+
 /* typography - START */
 h1 a span {
     display: none;
