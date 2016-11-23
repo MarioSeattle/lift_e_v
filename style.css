@@ -227,6 +227,7 @@ img.alignright {
 
 #slider {
     margin-top: 30px;
+    clear: both;
 }
 
 div.seo h2 {
@@ -322,6 +323,11 @@ main {
         float: right;
         width: auto;
     }
+/* This keeps header div from collapsing */ 
+ header{
+        overflow: auto;
+    }  
+    
 /* ----pages with sidebars Media Q styles----END */
 } /*<--END 790px Media query */
 @media all and (max-width: 540px) {
@@ -360,6 +366,10 @@ sidebar#donation{
     color: #004e98;
     border-radius: 5px;
     border-style: none;
+}
+    
+div.paypal-donations input {
+    width: 200px;
 }
     
 header h1 {
