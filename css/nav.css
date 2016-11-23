@@ -199,7 +199,7 @@ li > a:only-child:after { content: ''; }
 
 	nav a:hover,
  	nav ul ul ul a {
-		color: #fff;
+		color: #7c1142;
 	}
   
 	nav ul li ul li .toggle,
