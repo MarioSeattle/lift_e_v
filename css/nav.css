@@ -54,7 +54,6 @@ nav ul li {
 	display:inline-block;
 	float: left;
 	background-color: #fff;
-    width: 100%;
 	}
 
 /* Styling the links */
@@ -66,7 +65,7 @@ nav a {
 	text-decoration:none;
 }
 
-nav ul li:hover {background: #7c1142;}
+nav ul li:hover {background: #f4f487;}
 
 
 
@@ -79,7 +78,12 @@ nav ul li ul li a:hover {
 }
 
 /* Background color change on Hover */
-nav a:focus
+nav a:hover
+{ 
+	color: #7c1142; 
+}
+
+nav a:active
 { 
 	color: #fff; 
 }
@@ -100,7 +104,7 @@ nav ul li:hover > ul {
 	
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
+	width:20%;
 	float:none;
 	display:list-item;
 	position: relative;

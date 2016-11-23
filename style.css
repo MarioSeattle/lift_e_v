@@ -133,7 +133,7 @@ b {
     font-weight: bold;
     font-weight: 600;
 }
-i {
+i, em {
     font-weight: 400;
     font-style: italic;
 }
