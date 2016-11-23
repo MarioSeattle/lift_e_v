@@ -66,9 +66,12 @@ nav a {
 	text-decoration:none;
 }
 
-nav ul li:hover {background: #7c1142;}
-
-
+nav ul li:hover {
+    background: #7c1142;
+}
+ nav ul li a:hover {
+     color:#ffffff;
+ }
 
 nav ul li ul li:hover { 
     background: #f4f487; 
