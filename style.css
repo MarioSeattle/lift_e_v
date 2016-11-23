@@ -70,6 +70,23 @@ sidebar#donation {
     width: 30%;
 }
 
+#searchform div input#s{
+    width: 58%;
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#searchform div input#searchsubmit{
+    background-color: #f2f2f2;
+    width: 50px;
+    height: 30px;
+    color: #004e98;
+    border-radius: 5px;
+    border-style: none;
+}
+
 /* ----Header styles----END */
 
 body {
@@ -108,7 +125,7 @@ sidebar#twitter {
 }
 
 div.paypal-donations input {
-    width: 69%;
+    width: 79%;
 }
 
 .widget_search {
@@ -307,7 +324,7 @@ main {
     }
 /* ----pages with sidebars Media Q styles----END */
 } /*<--END 790px Media query */
-@media all and (max-width: 500px) {
+@media all and (max-width: 540px) {
 html {
     padding: 15px;
 }
@@ -321,6 +338,46 @@ main {
 #wrapper{
     width: 100%;
 }
+  
+sidebar#donation{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+   
+#searchform div input#s{
+    width: 70%;
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#searchform div input#searchsubmit{
+    background-color: #f2f2f2;
+    width: 60px;
+    height: 30px;
+    color: #004e98;
+    border-radius: 5px;
+    border-style: none;
+}
+    
+header h1 {
+    width: 100%;  
+}
+    
+#logo-main{
+    display: block;
+    padding: 10px 0 0;
+    float: none;
+    font-size: 20px;
+    line-height: 60px;
+    width: 90%;
+    max-width: 346px;
+    height: auto;
+    margin: auto;
+}
+    
 }/*<--END 350px Media query */
 /* Footer styles ----START */
 footer ul.menu {
