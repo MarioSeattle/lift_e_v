@@ -4,6 +4,11 @@
 	display: none;
 }
 
+/* hides top nav menu on desktop */
+nav.mobile{
+    display: none;
+}
+
 /* hamburger menu sizing */
 nav label.toggle img{
     width: 40px;
@@ -135,6 +140,17 @@ li > a:only-child:after { content: ''; }
 
 /* Media Queries
 --------------------------------------------- */
+@media all and (max-width : 780px) {
+    
+nav.mobile{
+    display: block;
+}
+    
+nav.desktop {
+    display: none;   
+}
+    
+}
 
 @media all and (max-width : 768px) {
 
