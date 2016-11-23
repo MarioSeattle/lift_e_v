@@ -64,6 +64,11 @@ header {
     margin: 0 auto;
     background-color: #fff;
 }
+
+sidebar#donation {
+    text-align: right;
+}
+
 /* ----Header styles----END */
 
 body {
@@ -74,7 +79,6 @@ body {
 main {
     width: 61.5%;
     float: left;
-    border: 1px solid black;
     padding: 0 20px;
 }
 main#home-page {
@@ -87,7 +91,6 @@ main#index-2 {
 sidebar {
       width: 29.5%;
       float: right;
-      border: 1px solid black;
       padding: 12px;
   }
 sidebar#twitter {
@@ -194,6 +197,11 @@ img.alignright {
 }
 /* ----Site wide styles----END */
 /* ----Home page styles----START */
+
+#slider {
+    margin-top: 30px;
+}
+
 div.seo h2 {
     text-align: center;
 }
