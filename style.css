@@ -154,6 +154,7 @@ h2.page-id {
     font-family: 'Source Serif Pro', serif;
     font-size: 3.0em;
     color: #7c1142;
+    margin:0px 0px 0px 10px;
 }
 
 h2 {
@@ -191,7 +192,6 @@ p {
     line-height: 1.4em;
     color: #000;
 }
-/* typography - END */
 
 b, strong {
     font-weight: 900;
@@ -212,6 +212,8 @@ blockquote {
     padding: 0.5em 10px;
     border-left: 3px, solid, #555;
 }
+
+/* typography - END */
 
 ul {
     padding: 0px 1px 10px 25px;
@@ -252,7 +254,7 @@ img.alignright {
     float: right;
     margin: 10px 0px 10px 15px;
 }
-    img.aligncenter {
+img.aligncenter {
     margin: 10px 10px 15px 10px;
 }
 /* ----Site wide styles----END */
