@@ -137,7 +137,7 @@ div.paypal-donations input {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Serif Pro', serif;
-    margin:.4em 0;
+    padding:.5em 0 .1em 0;
 }
 
 p, blockquote {
@@ -155,7 +155,6 @@ h2.page-id {
     font-family: 'Source Serif Pro', serif;
     font-size: 3.0em;
     color: #7c1142;
-
 }
 
 h2 {
@@ -210,6 +209,7 @@ blockquote {
     font-size: 1.15em;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    line-height: 1.4em;
     margin: .5em 10px;
     padding: 0.5em 10px;
     border-left: 3px, solid, #555;
@@ -224,6 +224,7 @@ ol {
 li {
     padding: 7px 0;
     font-family: 'Raleway', sans-serif;
+    line-height: 1.6em;
     color: #555;    
 }
 dl {
