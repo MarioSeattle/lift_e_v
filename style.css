@@ -13,11 +13,11 @@ Text Domain:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro rel="stylesheet");
+@import url('https://fonts.googleapis.com/css?family=Raleway|Source+Serif+Pro');
 /* CSS RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, blockquote, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -31,7 +31,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+    border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,8 +46,9 @@ html {
 /* ----Header styles----START */
 header h1 {
     width: 38.5%;
-    float: left;
+    float: left;        
 }
+
 #logo-main {
     display: block;
     padding: 0 0px;
@@ -133,57 +134,87 @@ div.paypal-donations input {
 }
 
 /* typography - START */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Serif Pro', serif;
+    margin:.4em 0;
+}
+
+p, blockquote {
+    font-family: 'Raleway', sans-serif;
+    padding: .5em 0;
+
+}
+
 h1 a span {
     display: none;
+    color:#7c1142;
 }
+
+h2.page-id {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3.0em;
+    color: #7c1142;
+
+}
+
 h2 {
-    font-family: Arial;
-    font-size: 3em;
-    color: #000;
-    margin: 15px 0;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2.5em;
+    color: #004e98;
+
 }
 h3 {
-    font-family: Arial;
-    font-size: 2.25em;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2em;
     color: #000;
     margin: 0;
 }
 h4 {
-    font-family: Arial;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.75em;
+    color: #7c1142;
+}
+
+h5 {
+    font-family: 'Source Serif Pro', serif;
     font-size: 1.5em;
+    color: #004e98;
+}
+
+h6 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.25em;
     color: #000;
 }
+
 p {
-    font-family: Arial;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    line-height: 1.4em;
     color: #000;
 }
 /* typography - END */
-b {
-    font-weight: bold;
-    font-weight: 600;
+
+b, strong {
+    font-weight: 900;
 }
+
 i, em {
     font-weight: 400;
     font-style: italic;
 }
-em {
-    font-style: italic;
-}
 
-strong {
-    font-weight: bold;
-    font-weight: 600;
-}
 blockquote {
     color: #555;
-    font-size: 1.4em;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-size: 1.15em;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     margin: .5em 10px;
     padding: 0.5em 10px;
+    border-left: 3px, solid, #555;
 }
+
 ul {
     padding: 0px 1px 10px 25px;
 }
@@ -192,14 +223,14 @@ ol {
 }
 li {
     padding: 7px 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #555;    
 }
 dl {
     padding: 0.5em;
   }
 dt {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     color: #555;
   }
@@ -209,7 +240,7 @@ dt:after {
 dd {
     margin: 5px 0 5px 15px;
     padding: 0 0 0.5em 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #555;
   }
 
@@ -373,7 +404,7 @@ div.paypal-donations input {
 }
     
 header h1 {
-    width: 100%;  
+    width: 100%;
 }
     
 #logo-main{
@@ -392,10 +423,12 @@ header h1 {
 /* Footer styles ----START */
 footer ul.menu {
     list-style: none;
+
 }
 footer li.menu-item {
     list-style: none;
 }
+
 footer ul.menu { /*This keep the footer from displaying to none in mobile view */
     display: inline-block;
 }
@@ -408,7 +441,7 @@ footer {
 }
 .footer-custom {
     color: #888;
-    font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font: normal normal 12px/1.4 'Raleway', sans-serif;
     max-width: 1008px;
     box-sizing: border-box;
     margin: 0 auto;
