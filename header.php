@@ -23,16 +23,6 @@
 <body>
 <!--Header starts here-->
 <header>
-    <nav class="mobile">
-        <label for="drop" class="toggle"><img src="<?php echo get_template_directory_uri(); ?>/images/hamburger-menu.png"></label>
-        <input type="checkbox" id="drop" />
-       <?php wp_nav_menu( array( 
-			'theme_location' => 'main-menu' ,
-			'menu' => 'Main Menu' ,
-			'container'  => 'ul',
-		) ); ?>
-    </nav>
-    
     <h1>
         <a href="<?php bloginfo('url'); ?>">
             <span>Lift every Voice foundation</span> <!-- for SEO -->
