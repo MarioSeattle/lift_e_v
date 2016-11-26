@@ -95,6 +95,12 @@ body {
     margin: 20px;
     background-color: #f2f2f2;
 }
+
+#wrapper {
+    border-top: 8px solid #f2f2f2;
+    background-color: #fff;
+    overflow:auto;
+}
 main {
     width: 61.5%;
     float: left;
@@ -111,6 +117,9 @@ sidebar {
     width: 29.5%;
     float: right;
     padding: 12px;
+}
+sidebar#primary{
+    border-left: 1px solid #7c1142;
 }
 sidebar#twitter {
     width: auto;
@@ -140,11 +149,6 @@ h1, h2, h3, h4, h5, h6 {
     padding:.6em 0 0 0;
 }
 
-p {
-    font-family: 'Raleway', sans-serif;
-    padding: .5em 0;
-}
-
 h1 a span {
     display: none;
     color:#7c1142;
@@ -159,7 +163,7 @@ h2.page-id {
 
 h2 {
     font-family: 'Source Serif Pro', serif;
-    font-size: 2.5em;
+    font-size: 2.25em;
     color: #004e98;
 
 }
@@ -190,6 +194,7 @@ p {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
+    padding: .5em 0;
     color: #000;
 }
 
@@ -208,9 +213,14 @@ blockquote {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     line-height: 1.4em;
-    margin-left: 1em;
-    padding:.4em .2em .2em .5em;
-    border-left: 3px solid #555;
+    margin-left: 2em;
+    margin-top: .5em;
+    padding-left: 1em;
+    border-left: 3px solid #A8A8A8;
+}
+
+blockquote p {
+    padding: 0;
 }
 
 /* typography - END */
@@ -224,7 +234,7 @@ ol {
 li {
     padding: 7px 0;
     font-family: 'Raleway', sans-serif;
-    line-height: 1.6em;
+    line-height: 1.4em;
     color: #555;
 }
 dl {
@@ -424,6 +434,8 @@ img.left {
     }
 
 }/*<--END 350px Media query */
+
+
 /* Footer styles ----START */
 footer ul.menu {
     list-style: none;
@@ -440,11 +452,12 @@ footer {
     clear: both;
 }
 .footer-gray {
-    background-color: #EFEFEF;
+    background-color: #58595b;
+    color: #fff;
     width: 100%;
 }
 .footer-custom {
-    color: #888;
+    color: #fff;
     font: normal normal 12px/1.4 'Raleway', sans-serif;
     max-width: 1008px;
     box-sizing: border-box;
@@ -490,8 +503,8 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 3px 0;
-    color: #888;
-    font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;
+    font: normal normal 12px 'Raleway', sans-serif;
     text-transform: uppercase;
     /*width: 150px;*/
 }
@@ -500,7 +513,7 @@ footer {
 .footer-custom a:visited,
 .ftr-links-sub li .link {
     text-decoration: none;
-    color: #888;
+    color: #fff;
     padding: 5px 0;
     display: block;
 }
@@ -511,7 +524,7 @@ footer {
 .footer-custom a:active,
 .ftr-links-sub li .link:hover {
     text-decoration: underline;
-    color: #888;
+    color: #fff;
     cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
