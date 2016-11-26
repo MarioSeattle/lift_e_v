@@ -13,8 +13,8 @@ Text Domain:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro rel="stylesheet");
-@import url('https://fonts.googleapis.com/css?family=Raleway|Source+Serif+Pro');
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
+@import url(https://fonts.googleapis.com/css?family=Raleway|Source+Serif+Pro);
 /* CSS RESET */
 html, body, div, span, applet, object, blockquote, iframe,
 h1, h2, h3, h4, h5, h6, p, pre,
@@ -210,7 +210,7 @@ blockquote {
     line-height: 1.4em;
     margin-left: 1em;
     padding:.4em .2em .2em .5em;
-    border-left: 3px, solid, #555;
+    border-left: 3px solid #555;
 }
 
 /* typography - END */
