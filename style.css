@@ -13,6 +13,451 @@ Text Domain:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* ----Site wide styles----START */
+html {
+    max-width: 980px;
+    margin: auto;
+    padding: 0 20px;
+    align-content: center;
+}
+/* ----Header styles----START */
+header h1 {
+    width: 38.5%;
+    float: left;
+}
+
+#logo-main {
+    display: block;
+    padding: 0 0px;
+    float: left;
+    font-size:1.6em;
+    line-height: 60px;
+    width: 100%;
+    max-width: 346px;
+    height: auto;
+    margin: 20px;
+}
+
+header {
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* ----Header styles----END */
+
+body {
+    max-width: 960px;
+    margin: 20px;
+    background-color: #f2f2f2;
+}
+main {
+    width: 61.5%;
+    float: left;
+    border: 1px solid black;
+    padding: 0 20px;
+}
+main#home-page {
+    width: 100%;
+    padding: 0;
+}
+main#index-2 {
+    text-align: center;
+}
+sidebar {
+      width: 29.5%;
+      float: right;
+      border: 1px solid black;
+      padding: 12px;
+  }
+sidebar#twitter {
+    width: auto;
+    float: right;
+    border: 1px solid black;
+    padding: 60px;
+}
+.widget {
+
+    width: auto;
+    height: auto;
+    margin-top:20px;
+}
+
+input[type=text] {
+    background:#f2f2f2;
+    border-radius:5px;
+    border:1px #cccccc solid;
+}
+
+input[type=submit] {
+    border:1px #cccccc solid;
+    background:#f2f2f2;
+    border-radius:5px;
+    color:#004e98;
+    font-family:;
+}
+/* typography - START */
+h1 a span {
+    display: none;
+}
+h2 {
+    font-family: Arial;
+    font-size: 3em;
+    color: #000;
+    margin: 15px 0;
+}
+h3 {
+    font-family: Arial;
+    font-size: 2.25em;
+    color: #000;
+    margin: 0;
+}
+h4 {
+    font-family: Arial;
+    font-size: 1.5em;
+    color: #000;
+}
+p {
+    font-family: Arial;
+    font-size: 1em;
+    color: #000;
+}
+/* typography - END */
+b {
+    font-weight: bold;
+    font-weight: 600;
+}
+i {
+    font-weight: 400;
+    font-style: italic;
+}
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+    font-weight: 600;
+}
+
+ul {
+    padding: 0px 1px 10px 25px;
+}
+ol {
+    padding: 0px 10px 10px 25px;
+}
+li {
+    padding: 7px 0;
+    font-family: Arial, sans-serif;
+    color: #555;    
+}
+dl {
+    padding: 0.5em;
+  }
+dt {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: #555;
+  }
+dt:after {
+    content: ":";
+  }
+dd {
+    margin: 5px 0 5px 15px;
+    padding: 0 0 0.5em 0;
+    font-family: Arial, sans-serif;
+    color: #555;
+  }
+
+img.alignleft {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 0 10px;
+}
+/* ----Site wide styles----END */
+/* ----Home page styles----START */
+div.seo h2 {
+    text-align: center;
+}
+div.seo {
+   width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.cta-content {
+    position: absolute;
+    z-index: 1000;
+    height: 34%;
+    width: 90%;
+    bottom: 4px;
+    background: rgba(124,17,66,.8);
+    padding: 2% 5%;
+    text-align: left;
+}
+#cta-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.cta {
+    max-width: 300px;
+    min-width: 250px;
+    position: relative;
+    width: 44%;
+    z-index: 1;
+    display: inline-block; 
+}
+.cta2 {
+    max-width: 300px;
+    min-width: 250px;
+    position: relative;
+    width: 44%;
+    z-index: 1;
+    display: inline-block;
+    margin: 2%;
+}
+.cta img,
+.cta2 img{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 300px;
+}
+/* ----Home page styles----END */
+/* ----index page styles----START */
+.postBox{
+    margin: 10px;
+    display: inline-block;
+}
+img.left {
+    float: left;
+    margin: 0 10px 0 0;
+}
+/* ----index page styles----END */  
+@media all and (max-width: 790px) {
+/* ----Home page Media Q  styles----START */
+#cta-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cta {
+    margin: 10px 0;
+ }
+/* ----Home page Media Q styles----END */
+/* ----pages with sidebars Media Q styles----START */
+#wrapper{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+main {
+    float: none;
+    width: 90%;
+}
+    sidebar#primary {
+        float: none;
+        width: 90%;
+    }
+    sidebar#donation {
+        float: right;
+        width: auto;
+    }
+    sidebar#twitter {
+        float: right;
+        width: auto;
+    }
+/* ----pages with sidebars Media Q styles----END */
+} /*<--END 790px Media query */
+@media all and (max-width: 500px) {
+html {
+    padding: 15px;
+}
+body {
+    margin: 0;
+}
+main {
+    padding: 0;
+    width: 100%;
+}
+#wrapper{
+    width: 100%;
+}
+}/*<--END 350px Media query */
+/* Footer styles ----START */
+footer ul.menu {
+    list-style: none;
+}
+footer li.menu-item {
+    list-style: none;
+}
+footer ul.menu { /*This keep the footer from displaying to none in mobile view */
+    display: inline-block;
+}
+footer {
+    clear: both;
+}
+.footer-gray {
+    background-color: #EFEFEF;
+    width: 100%;
+}
+.footer-custom {
+    color: #888;
+    font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    max-width: 1008px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
+}
+.footer-custom:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.footer-lists:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.footer-list-wrap {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 568px) {
+    .footer-list-wrap {
+        width: 33.3333%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .footer-list-wrap {
+        width: 25%;
+    }
+}
+.ftr-links-sub {
+    padding: 0;
+    margin: 0;
+}
+.ftr-links-sub:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.ftr-links-sub li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px 0;
+    color: #888;
+    font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    /*width: 150px;*/
+}
+.footer-custom a,
+.footer-custom a:link,
+.footer-custom a:visited,
+.ftr-links-sub li .link {
+    text-decoration: none;
+    color: #888;
+    padding: 5px 0;
+    display: block;
+}
+.footer-custom .footer-legal a {
+    display: inline;
+}
+.footer-custom a:hover,
+.footer-custom a:active,
+.ftr-links-sub li .link:hover {
+    text-decoration: underline;
+    color: #888;
+    cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+    .footer-custom a,
+    .footer-custom a:link,
+    .footer-custom a:visited,
+    .ftr-links-sub li .link {
+        padding: 0;
+    }
+}
+/* BEGIN SOCIAL STYLES*/
+.footer-social {
+    text-align: right;
+}
+@media only screen and (min-width: 768px) {
+    .footer-lists {
+        width: 100%;
+    }
+    .footer-email {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .footer-social {
+        width: 45%;
+        margin-left: 5%;
+        float: left;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 1008px) {
+    .footer-lists {
+        width: 66.6666%;
+        float: left;
+    }
+    .footer-email {
+        width: 33.3333%;
+    }
+    .footer-social {
+        width: 33.3333%;
+        float: right;
+        margin-left: 0;
+    }
+}
+/* Footer styles ----END */
+
+/*
+Theme Name: lift_e_v
+Theme URI: http://
+Author: Fall 2016
+Author URI:
+Description: Mike's class
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro rel="stylesheet");
 @import url('https://fonts.googleapis.com/css?family=Raleway|Source+Serif+Pro');
 /* CSS RESET */
@@ -280,7 +725,7 @@ div.seo {
     height: 34%;
     width: 90%;
     bottom: 4px;
-    background: rgba(113,113,113,0.4);
+    background: rgba(124,17,66,.8);
     padding: 2% 5%;
     text-align: left;
 }
@@ -557,5 +1002,3 @@ footer {
     }
 }
 /* Footer styles ----END */
-
-
