@@ -103,8 +103,8 @@ function my_register_sidebars() {
             'description' => __( 'For home page CTA 1' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget' => '</div>',
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>'
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
         )
     );
     
@@ -116,8 +116,8 @@ function my_register_sidebars() {
             'description' => __( 'For home page CTA 2' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget' => '</div>',
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>'
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
         )
     );
     
@@ -129,8 +129,8 @@ function my_register_sidebars() {
             'description' => __( 'For home page CTA 3' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget' => '</div>',
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>'
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
         )
     );
 	/* Repeat register_sidebar() code for additional sidebars. */

@@ -297,9 +297,12 @@ div.seo {
     height: 34%;
     width: 90%;
     bottom: 4px;
-    background: rgba(124,17,66,.8);
+    background: rgba(244, 244, 135, .8);
     padding: 2% 5%;
     text-align: left;
+}
+.cta-content h3{
+    font-size: 1.75em;
 }
 #cta-row {
     display: flex;
@@ -330,6 +333,7 @@ div.seo {
     max-height: 300px;
     max-width: 300px;
 }
+
 /* ----Home page styles----END */
 /* ----index page styles----START */
 .postBox{
@@ -372,10 +376,9 @@ img.left {
         width: auto;
     }
     sidebar#twitter {
-    width: auto;
-    margin:auto;
+        float: right;
+        width: auto;
     }
- 
     /* This keeps header div from collapsing */
     header{
         overflow: auto;
@@ -441,22 +444,28 @@ img.left {
         margin: auto;
     }
 
-        sidebar#twitter {
-        width: auto;
-        margin:auto;
-    }
-
-/*<--END 350px Media query */
+}/*<--END 350px Media query */
 
 
 /* Footer styles ----START */
-footer ul.menu {
+    footer ul.menu {
     list-style: none;
+}
+    
+    footer ul.menu li:nth-child(1) {
+    font-family: 'Source Serif Pro', serif;
+        font-size: 1.25em;
+        font-weight: 700;
+}
+    ul#menu-footer4.menu li:nth-child(2) {
+    font-family: 'Source Serif Pro', serif;
+        font-size: 1.25em;
+        font-weight: 700;
+}
+    footer li.menu-item {
+    list-style: none;
+}
 
-}
-footer li.menu-item {
-    list-style: none;
-}
 
 footer ul.menu { /*This keep the footer from displaying to none in mobile view */
     display: inline-block;
@@ -493,10 +502,11 @@ footer {
     box-sizing: border-box;
 }
 
+/*--------media queries-------*/
 
 @media only screen and (min-width: 568px) {
     .footer-list-wrap {
-        width: 25;
+        width: 25%;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -504,6 +514,10 @@ footer {
         width: 25%;
     }
 }
+
+/*--------end media queries-------*/
+
+
 .ftr-links-sub {
     padding: 0;
     margin: 0;
@@ -542,6 +556,9 @@ footer {
     color: #fff;
     cursor: pointer;
 }
+
+/*--------media query-------*/
+
 @media only screen and (min-width: 768px) {
     .footer-custom a,
     .footer-custom a:link,
@@ -550,47 +567,48 @@ footer {
         padding: 0;
     }
 }
+
+/*--------end media query-------*/
+
 /* BEGIN SOCIAL STYLES*/
 .footer-social {
-    text-align: left;
+    text-align: right;
 }
 
-
+/*--------media queries-------*/
 @media only screen and (min-width: 768px) {
     .footer-lists {
         width: 100%;
     }
-
     .footer-email {
         width: 50%;
         float: left;
         text-align: left;
+        
     }
     .footer-social {
+        width: 45%;
+        margin-left: 5%;
+        float: left;
         text-align: left;
-        width: 90%;
-        margin: auto;
-        background-color:pink;   
+        
     }
-    sidebar#twitter {
-        background-color: blue;
-        width: auto;
-        margin: auto;
-    }
-
+}
 @media only screen and (min-width: 1008px) {
     .footer-lists {
         width: 75%;
         float: left;
     }
     .footer-email {
-        width: 25%;
+        width: 30%;
+        background-color: orange;
     }
     .footer-social {
-        text-align: left;
         width: 25%;
         float: right;
         margin-left: 0;
+        background-color:pink;
     }
 }
+/*--------end media queries-------*/
 /* Footer styles ----END */
