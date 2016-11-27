@@ -51,6 +51,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
             'footer2' => 'Footer2',
             'footer3' => 'Footer3',
             'footer4' => 'Footer4',
+	'footer5' => 'Footer5',
 		)
 	);
 }

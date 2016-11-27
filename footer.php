@@ -28,6 +28,14 @@
 		              ) ); ?>
                 </div>
                 <!--/.footer-list-wrap-->
+                <div class="footer-list-wrap">
+                    <?php wp_nav_menu( array( 
+                        'theme_location' => 'footer4' ,
+                        'menu' => 'Footer4' ,
+                        'container'  => 'ul',
+		              ) ); ?>
+                </div>
+                <!--/.footer-list-wrap-->
             </div>
             <!--/.footer-lists-->
             <!--/.footer-email-->
@@ -35,8 +43,8 @@
                 <sidebar id="twitter">
                     <div class="footer-list-wrap">
                         <?php wp_nav_menu( array(
-                            'theme_location' => 'footer4' ,
-                            'menu' => 'Footer4' ,
+                            'theme_location' => 'footer5' ,
+                            'menu' => 'Footer5' ,
                             'container'  => 'ul',
                         ) ); ?>
                     </div>

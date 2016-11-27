@@ -110,6 +110,9 @@ main {
 main#home-page {
     width: 100%;
     padding: 0;
+    border-top: 8px solid #f2f2f2;
+    border-bottom: 12px solid #f2f2f2;
+    background-color: #fff;
 }
 main#index-2 {
     text-align: center;
@@ -125,8 +128,11 @@ sidebar#primary{
 sidebar#twitter {
     width: auto;
     float: right;
-    border: 1px solid black;
-    padding: 60px;
+    border: .5px solid black;
+    padding: 20px 40px 40px 40px;
+}
+#wysija-4 {    
+    padding-bottom: 20px;
 }
 .widget_paypal_donations,
 .widget_search {
@@ -366,9 +372,10 @@ img.left {
         width: auto;
     }
     sidebar#twitter {
-        float: right;
-        width: auto;
+    width: auto;
+    margin:auto;
     }
+ 
     /* This keeps header div from collapsing */
     header{
         overflow: auto;
@@ -434,7 +441,12 @@ img.left {
         margin: auto;
     }
 
-}/*<--END 350px Media query */
+        sidebar#twitter {
+        width: auto;
+        margin:auto;
+    }
+
+/*<--END 350px Media query */
 
 
 /* Footer styles ----START */
@@ -480,9 +492,11 @@ footer {
     float: left;
     box-sizing: border-box;
 }
+
+
 @media only screen and (min-width: 568px) {
     .footer-list-wrap {
-        width: 33.3333%;
+        width: 25;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -538,34 +552,43 @@ footer {
 }
 /* BEGIN SOCIAL STYLES*/
 .footer-social {
-    text-align: right;
+    text-align: left;
 }
+
+
 @media only screen and (min-width: 768px) {
     .footer-lists {
         width: 100%;
     }
+
     .footer-email {
         width: 50%;
         float: left;
         text-align: left;
     }
     .footer-social {
-        width: 45%;
-        margin-left: 5%;
-        float: left;
         text-align: left;
+        width: 90%;
+        margin: auto;
+        background-color:pink;   
     }
-}
+    sidebar#twitter {
+        background-color: blue;
+        width: auto;
+        margin: auto;
+    }
+
 @media only screen and (min-width: 1008px) {
     .footer-lists {
-        width: 66.6666%;
+        width: 75%;
         float: left;
     }
     .footer-email {
-        width: 33.3333%;
+        width: 25%;
     }
     .footer-social {
-        width: 33.3333%;
+        text-align: left;
+        width: 25%;
         float: right;
         margin-left: 0;
     }
