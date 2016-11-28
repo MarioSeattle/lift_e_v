@@ -150,6 +150,22 @@ div.paypal-donations input {
     margin-right: 9px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
 /* typography - START */
 
 h1, h2, h3, h4, h5, h6 {
@@ -275,6 +291,7 @@ img.alignright {
 img.aligncenter {
     margin: 10px 10px 15px 10px;
 }
+
 /* ----Site wide styles----END */
 /* ----Home page styles----START */
 
