@@ -127,9 +127,10 @@ sidebar#primary{
 }
 sidebar#twitter {
     width: auto;
-    float: right;
+    margin: 0 auto;
     border: .5px solid black;
     padding: 20px 40px 40px 40px;
+    display:inline-block;
 }
 #wysija-4 {    
     padding-bottom: 20px;
@@ -376,7 +377,7 @@ img.left {
         width: auto;
     }
     sidebar#twitter {
-        float: right;
+    margin: 0 auto;
         width: auto;
     }
     /* This keeps header div from collapsing */
@@ -442,6 +443,11 @@ img.left {
         max-width: 346px;
         height: auto;
         margin: auto;
+    }
+    
+        sidebar#twitter {
+    margin: 0 auto;
+        width: auto;
     }
 
 }/*<--END 350px Media query */
@@ -571,29 +577,48 @@ footer {
 /*--------end media query-------*/
 
 /* BEGIN SOCIAL STYLES*/
-.footer-social {
-    text-align: right;
+.footer-social{
+    text-align: center;
 }
 
 /*--------media queries-------*/
+
+@media only screen and (min-width: 420px) {
+  .footer-email {
+        width: 100%;
+        margin: 0 auto;             
+    }
+    .footer-social {
+        width: 99%;
+        margin: 0 auto;
+    }
+
+}
+@media only screen and (min-width: 568px) {
+  .footer-email {
+        width: 100%;
+        margin: 0 auto;             
+    }
+    .footer-social {
+        width: 99%;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .footer-lists {
         width: 100%;
     }
     .footer-email {
-        width: 50%;
-        float: left;
-        text-align: left;
-        
+        width: 100%;
+        margin: 0 auto;             
     }
     .footer-social {
-        width: 45%;
-        margin-left: 5%;
-        float: left;
-        text-align: left;
-        
+        width: 99%;
+        margin: 0 auto;
     }
 }
+
 @media only screen and (min-width: 1008px) {
     .footer-lists {
         width: 75%;
@@ -601,14 +626,13 @@ footer {
     }
     .footer-email {
         width: 30%;
-        background-color: orange;
     }
     .footer-social {
         width: 25%;
         float: right;
         margin-left: 0;
-        background-color:pink;
-    }
+    }          
 }
+
 /*--------end media queries-------*/
 /* Footer styles ----END */
