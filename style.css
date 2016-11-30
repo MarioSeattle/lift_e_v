@@ -150,12 +150,10 @@ div.paypal-donations input {
     margin-right: 9px;
 }
 
-a:link {
-    text-decoration: none;
-}
-
+a:link,
 a:visited {
     text-decoration: none;
+    color: #004e98;
 }
 
 a:hover {
