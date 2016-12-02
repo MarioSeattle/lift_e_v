@@ -95,6 +95,13 @@ body {
     margin: 20px;
     background-color: #f2f2f2;
 }
+
+#wrapper {
+    border-top: 8px solid #f2f2f2;
+    border-bottom: 12px solid #f2f2f2;
+    background-color: #fff;
+    overflow:auto;
+}
 main {
     width: 61.5%;
     float: left;
@@ -103,6 +110,9 @@ main {
 main#home-page {
     width: 100%;
     padding: 0;
+    border-top: 8px solid #f2f2f2;
+    border-bottom: 12px solid #f2f2f2;
+    background-color: #fff;
 }
 main#index-2 {
     text-align: center;
@@ -112,11 +122,18 @@ sidebar {
     float: right;
     padding: 12px;
 }
+sidebar#primary{
+    border-left: 1px solid #7c1142;
+}
 sidebar#twitter {
     width: auto;
-    float: right;
-    border: 1px solid black;
-    padding: 60px;
+    margin: 0 auto;
+    border: .5px solid black;
+    padding: 20px 40px 40px 40px;
+    display:inline-block;
+}
+#wysija-4 {    
+    padding-bottom: 20px;
 }
 .widget_paypal_donations,
 .widget_search {
@@ -133,16 +150,28 @@ div.paypal-donations input {
     margin-right: 9px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
 /* typography - START */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Serif Pro', serif;
     padding:.6em 0 0 0;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-    padding: .5em 0;
 }
 
 h1 a span {
@@ -159,7 +188,7 @@ h2.page-id {
 
 h2 {
     font-family: 'Source Serif Pro', serif;
-    font-size: 2.5em;
+    font-size: 2.25em;
     color: #004e98;
 
 }
@@ -190,6 +219,7 @@ p {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
+    padding: .5em 0;
     color: #000;
 }
 
@@ -208,9 +238,14 @@ blockquote {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     line-height: 1.4em;
-    margin-left: 1em;
-    padding:.4em .2em .2em .5em;
-    border-left: 3px solid #555;
+    margin-left: 2em;
+    margin-top: .5em;
+    padding-left: 1em;
+    border-left: 3px solid #A8A8A8;
+}
+
+blockquote p {
+    padding: 0;
 }
 
 /* typography - END */
@@ -224,7 +259,7 @@ ol {
 li {
     padding: 7px 0;
     font-family: 'Raleway', sans-serif;
-    line-height: 1.6em;
+    line-height: 1.4em;
     color: #555;
 }
 dl {
@@ -257,6 +292,7 @@ img.alignright {
 img.aligncenter {
     margin: 10px 10px 15px 10px;
 }
+
 /* ----Site wide styles----END */
 /* ----Home page styles----START */
 
@@ -280,9 +316,12 @@ div.seo {
     height: 34%;
     width: 90%;
     bottom: 4px;
-    background: rgba(124,17,66,.8);
+    background: rgba(244, 244, 135, .8);
     padding: 2% 5%;
     text-align: left;
+}
+.cta-content h3{
+    font-size: 1.75em;
 }
 #cta-row {
     display: flex;
@@ -313,6 +352,7 @@ div.seo {
     max-height: 300px;
     max-width: 300px;
 }
+
 /* ----Home page styles----END */
 /* ----index page styles----START */
 .postBox{
@@ -355,7 +395,7 @@ img.left {
         width: auto;
     }
     sidebar#twitter {
-        float: right;
+    margin: 0 auto;
         width: auto;
     }
     /* This keeps header div from collapsing */
@@ -422,16 +462,34 @@ img.left {
         height: auto;
         margin: auto;
     }
+    
+        sidebar#twitter {
+    margin: 0 auto;
+        width: auto;
+    }
 
 }/*<--END 350px Media query */
-/* Footer styles ----START */
-footer ul.menu {
-    list-style: none;
 
-}
-footer li.menu-item {
+
+/* Footer styles ----START */
+    footer ul.menu {
     list-style: none;
 }
+    
+    footer ul.menu li:nth-child(1) {
+    font-family: 'Source Serif Pro', serif;
+        font-size: 1.25em;
+        font-weight: 700;
+}
+    ul#menu-footer4.menu li:nth-child(2) {
+    font-family: 'Source Serif Pro', serif;
+        font-size: 1.25em;
+        font-weight: 700;
+}
+    footer li.menu-item {
+    list-style: none;
+}
+
 
 footer ul.menu { /*This keep the footer from displaying to none in mobile view */
     display: inline-block;
@@ -440,11 +498,12 @@ footer {
     clear: both;
 }
 .footer-gray {
-    background-color: #EFEFEF;
+    background-color: #58595b;
+    color: #fff;
     width: 100%;
 }
 .footer-custom {
-    color: #888;
+    color: #fff;
     font: normal normal 12px/1.4 'Raleway', sans-serif;
     max-width: 1008px;
     box-sizing: border-box;
@@ -466,9 +525,12 @@ footer {
     float: left;
     box-sizing: border-box;
 }
+
+/*--------media queries-------*/
+
 @media only screen and (min-width: 568px) {
     .footer-list-wrap {
-        width: 33.3333%;
+        width: 25%;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -476,6 +538,10 @@ footer {
         width: 25%;
     }
 }
+
+/*--------end media queries-------*/
+
+
 .ftr-links-sub {
     padding: 0;
     margin: 0;
@@ -490,8 +556,8 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 3px 0;
-    color: #888;
-    font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;
+    font: normal normal 12px 'Raleway', sans-serif;
     text-transform: uppercase;
     /*width: 150px;*/
 }
@@ -500,7 +566,7 @@ footer {
 .footer-custom a:visited,
 .ftr-links-sub li .link {
     text-decoration: none;
-    color: #888;
+    color: #fff;
     padding: 5px 0;
     display: block;
 }
@@ -511,9 +577,12 @@ footer {
 .footer-custom a:active,
 .ftr-links-sub li .link:hover {
     text-decoration: underline;
-    color: #888;
+    color: #fff;
     cursor: pointer;
 }
+
+/*--------media query-------*/
+
 @media only screen and (min-width: 768px) {
     .footer-custom a,
     .footer-custom a:link,
@@ -522,38 +591,66 @@ footer {
         padding: 0;
     }
 }
+
+/*--------end media query-------*/
+
 /* BEGIN SOCIAL STYLES*/
-.footer-social {
-    text-align: right;
+.footer-social{
+    text-align: center;
 }
+
+/*--------media queries-------*/
+
+@media only screen and (min-width: 420px) {
+  .footer-email {
+        width: 100%;
+        margin: 0 auto;             
+    }
+    .footer-social {
+        width: 99%;
+        margin: 0 auto;
+    }
+
+}
+@media only screen and (min-width: 568px) {
+  .footer-email {
+        width: 100%;
+        margin: 0 auto;             
+    }
+    .footer-social {
+        width: 99%;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .footer-lists {
         width: 100%;
     }
     .footer-email {
-        width: 50%;
-        float: left;
-        text-align: left;
+        width: 100%;
+        margin: 0 auto;             
     }
     .footer-social {
-        width: 45%;
-        margin-left: 5%;
-        float: left;
-        text-align: left;
+        width: 99%;
+        margin: 0 auto;
     }
 }
+
 @media only screen and (min-width: 1008px) {
     .footer-lists {
-        width: 66.6666%;
+        width: 75%;
         float: left;
     }
     .footer-email {
-        width: 33.3333%;
+        width: 30%;
     }
     .footer-social {
-        width: 33.3333%;
+        width: 25%;
         float: right;
         margin-left: 0;
-    }
+    }          
 }
+
+/*--------end media queries-------*/
 /* Footer styles ----END */
