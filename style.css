@@ -132,7 +132,7 @@ sidebar#twitter {
     padding: 20px 40px 40px 40px;
     display:inline-block;
 }
-#wysija-4 {    
+#wysija-4 {
     padding-bottom: 20px;
 }
 .widget_paypal_donations,
@@ -152,10 +152,12 @@ div.paypal-donations input {
 
 a:link {
     text-decoration: none;
+    color: #004e98;
 }
 
 a:visited {
     text-decoration: none;
+    color: #004e98;
 
 }
 
@@ -189,7 +191,7 @@ h2.page-id {
 h2 {
     font-family: 'Source Serif Pro', serif;
     font-size: 2.25em;
-    color: #004e98;
+    color: #7c1142;
 
 }
 h3 {
@@ -322,10 +324,19 @@ div.seo {
 }
 .cta-content h3{
     font-size: 1.75em;
+    padding: 0;
 }
+
+.cta-content p{
+    line-height: 18px;
+    padding: .3vw;
+}
+
+
+
 #cta-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 0;
 }
 .cta {
@@ -335,6 +346,7 @@ div.seo {
     width: 44%;
     z-index: 1;
     display: inline-block;
+    margin: 5px;
 }
 .cta2 {
     max-width: 300px;
@@ -462,7 +474,7 @@ img.left {
         height: auto;
         margin: auto;
     }
-    
+
         sidebar#twitter {
     margin: 0 auto;
         width: auto;
@@ -475,7 +487,7 @@ img.left {
     footer ul.menu {
     list-style: none;
 }
-    
+
     footer ul.menu li:nth-child(1) {
     font-family: 'Source Serif Pro', serif;
         font-size: 1.25em;
@@ -604,7 +616,7 @@ footer {
 @media only screen and (min-width: 420px) {
   .footer-email {
         width: 100%;
-        margin: 0 auto;             
+        margin: 0 auto;
     }
     .footer-social {
         width: 99%;
@@ -615,7 +627,7 @@ footer {
 @media only screen and (min-width: 568px) {
   .footer-email {
         width: 100%;
-        margin: 0 auto;             
+        margin: 0 auto;
     }
     .footer-social {
         width: 99%;
@@ -629,7 +641,7 @@ footer {
     }
     .footer-email {
         width: 100%;
-        margin: 0 auto;             
+        margin: 0 auto;
     }
     .footer-social {
         width: 99%;
@@ -649,7 +661,7 @@ footer {
         width: 25%;
         float: right;
         margin-left: 0;
-    }          
+    }
 }
 
 /*--------end media queries-------*/
