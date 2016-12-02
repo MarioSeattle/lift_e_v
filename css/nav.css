@@ -10,7 +10,7 @@ nav label.toggle img{
 }
 
 /* Giving a background-color to the nav container. */
-nav { 
+nav {
 	margin:0;
 	padding: 0;
 	background-color: #fff;
@@ -46,87 +46,89 @@ nav ul {
     display: flex;
     justify-content: space-around;
 	}
-	
+
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
-    padding: 7px 0;
+  padding: 7px 0;
 	display:inline-block;
 	float: left;
 	background-color: #fff;
-    width: 100%;
+
 	}
 
 /* Styling the links */
 nav a {
 	display:block;
-	padding:14px 20px;	
+	padding:14px 20px;
 	color:#004e98;
 	font-size:17px;
 	text-decoration:none;
+	width: 100%;
 }
 
 nav ul li:hover {
-    background: #7c1142;
+    background: #f4f487;
 }
  nav ul li a:hover {
-     color:#ffffff;
+    color:#004e98;
+		text-decoration: none;
  }
 
-nav ul li ul li:hover { 
-    background: #f4f487; 
+nav ul li ul li:hover {
+    background: #7c1142;
 }
 
-nav ul li ul li a:hover { 
-    color: #7c1142; 
+nav ul li ul li a:hover {
+    color: #f4f487;
 }
 
 /* Background color change on Hover */
 nav a:focus
-{ 
-	color: #fff; 
+{
+	color: #fff;
 }
 
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {
 	display: none;
-	position: absolute; 
+	position: absolute;
 	/* has to be the same number as the "line-height" of "nav a" */
-	top: 60px; 
+	top: 60px;
 }
-	
+
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
 }
-	
+
 /* Fisrt Tier Dropdown */
 nav ul ul li {
 	width:170px;
 	float:none;
 	display:list-item;
 	position: relative;
-    background-color: #7c1142;
-    
+    background-color: #f4f487;
+
 }
 
 ul li ul li a {
-    color: #fff;
+    color: #004e98;
 }
 
-/* Second, Third and more Tiers	
+/* Second, Third and more Tiers
  * We move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
 nav ul ul ul li {
 	position: relative;
 	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left:170px;
 }
 
-	
+
 /* Change ' +' in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
@@ -160,7 +162,7 @@ li > a:only-child:after { content: ''; }
 	.toggle {
 		display: block;
 		background-color: #bababa;
-		padding:14px 20px;	
+		padding:14px 20px;
 		color:#000;
 		font-size:17px;
 		text-decoration:none;
@@ -184,7 +186,7 @@ li > a:only-child:after { content: ''; }
         margin: 0px;
         padding: 7px 0;
         display: inline-block;
- 
+
 		}
 
 	nav ul ul .toggle,
@@ -200,19 +202,19 @@ li > a:only-child:after { content: ''; }
  	nav ul ul ul a {
 		color: #fff;
 	}
-  
+
 	nav ul li ul li .toggle,
 	nav ul ul a,
   nav ul ul ul a{
-		padding:14px 20px;	
+		padding:14px 20px;
 		color:#000;
-		font-size:17px; 
+		font-size:17px;
 	}
-  
-  
+
+
 	nav ul li ul li .toggle,
 	nav ul ul a {
-		background-color: #bababa; 
+		background-color: #bababa;
 	}
 
 	/* Hide Dropdowns by Default */
@@ -222,13 +224,13 @@ li > a:only-child:after { content: ''; }
 		color: #fff;
 		/* has to be the same number as the "line-height" of "nav a" */
 	}
-		
+
 	/* Hide menus on hover */
 	nav ul ul li:hover > ul,
 	nav ul li:hover > ul {
 		display: none;
 	}
-		
+
 	/* First Tier Dropdown */
 	nav ul ul li {
 		display: block;
@@ -237,7 +239,7 @@ li > a:only-child:after { content: ''; }
 
 	nav ul ul ul li {
 		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
+		/* has to be the same number as the "width" of "nav ul ul li" */
 
 	}
 
