@@ -264,7 +264,6 @@ li > a:only-child:after { content: ''; }
 
 	nav ul li {
 		display:block;
-		width: 94%;
 	}
 
 }
