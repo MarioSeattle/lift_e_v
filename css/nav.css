@@ -14,7 +14,15 @@ nav {
 	margin:0;
 	padding: 0;
 	background-color: #fff;
-    clear: both;
+  clear: both;
+}
+
+nav.desktop {
+	margin-left: 7%;
+}
+
+nav.mobile {
+	display: none;
 }
 
 #logo {
@@ -37,10 +45,10 @@ nav:after {
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
 nav ul {
-	padding:0;
-	margin:0;
-	list-style: none;
-	position: relative;
+	  padding:0;
+	  margin:0;
+	  list-style: none;
+	  position: relative;
     z-index: 3;
     width: 100%;
     display: flex;
@@ -49,10 +57,7 @@ nav ul {
 
 /* Positioning the navigation items inline */
 nav ul li {
-	margin: 0px;
-  padding: 7px 0;
-	display:inline-block;
-	float: left;
+	width: 100%;
 	background-color: #fff;
 
 	}
@@ -105,11 +110,11 @@ nav ul li:hover > ul {
 
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
+	width:178.5px;
 	float:none;
 	display:list-item;
 	position: relative;
-    background-color: #f4f487;
+  background-color: #f4f487;
 
 }
 
@@ -139,6 +144,14 @@ li > a:only-child:after { content: ''; }
 
 @media all and (max-width : 768px) {
 
+	nav.mobile {
+		display: inherit;
+	}
+
+	nav.desktop {
+		display: none;
+	}
+
 	#logo {
 		display: block;
 		padding: 0;
@@ -149,6 +162,7 @@ li > a:only-child:after { content: ''; }
 
 	nav {
 		margin: 0;
+
 	}
 
 	/* Hide the navigation menu by default */
@@ -183,11 +197,12 @@ li > a:only-child:after { content: ''; }
 	nav ul li {
 		display: block;
 		width: 100%;
-        margin: 0px;
-        padding: 7px 0;
-        display: inline-block;
-
-		}
+    margin: 0px;
+    padding: 7px 0;
+    display: inline-block;
+		background-color: #f4f487;
+    border-bottom: solid 1px #bababa;
+	}
 
 	nav ul ul .toggle,
 	nav ul ul a {
