@@ -13,7 +13,7 @@ add_theme_support( 'html5', $args );
 add_theme_support( 'automatic-feed-links' );
 
 //Allows featured image ability
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 
 //for security, hide wp version in web pages and feeds
 function remove_version_info() {
@@ -32,7 +32,7 @@ function my_add_excerpts_to_pages() {
 // set Media Library image link default to "none"
 function wpb_imagelink_setup() {
 	$image_set = get_option( 'image_default_link_type' );
-	
+
 	if ($image_set !== 'none') {
 		update_option('image_default_link_type', 'none');
 	}
@@ -51,7 +51,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
             'footer2' => 'Footer2',
             'footer3' => 'Footer3',
             'footer4' => 'Footer4',
-	'footer5' => 'Footer5',
+						'footer5' => 'Footer5',
 		)
 	);
 }
@@ -94,7 +94,7 @@ function my_register_sidebars() {
             'after_title' => '</h3>'
         )
     );
-    
+
     /* Register the social sidebar for home-cta1 */
     register_sidebar(
         array(
@@ -107,7 +107,7 @@ function my_register_sidebars() {
             'after_title' => '</h4>'
         )
     );
-    
+
      /* Register the social sidebar for home-cta2 */
     register_sidebar(
         array(
@@ -120,7 +120,7 @@ function my_register_sidebars() {
             'after_title' => '</h4>'
         )
     );
-    
+
      /* Register the social sidebar for home-cta3 */
     register_sidebar(
         array(
@@ -149,40 +149,40 @@ add_image_size( 'cta-thumb', 300, 300, true ); //300 pixels wide and tall and cr
 
 // Get Featured Page-grabs page/post and populates into home page cta.
 function get_featured_page($atts) {
-	
+
 	$myPostID = intval($atts['id']); // sets the id to pass
-	
+
 	$myPosting = get_post($myPostID); // gets the post of id passed
-	
+
 	$caseTitle = $myPosting->post_title; // get title
 	$caseExcerpt = $myPosting->post_excerpt; // get excerpt
 	$caseImage = get_the_post_thumbnail($myPostID, 'cta-thumb'); // get featured thumbnail
 	$caseLink = get_permalink($myPosting->ID); // get permalink
-	
+
 	$myFeaturePage = '<a href="'.$caseLink.'">'.$caseImage.'</a>
                 <div class="cta-content">
                     <h3><a href="'.$caseLink.'">'.$caseTitle.'</a></h3>
                     <p>'.$caseExcerpt.'&nbsp;<a href="'.$caseLink.'">Read More&nbsp;&raquo;</a></p></div>'; // write it up...
-	
+
 	return $myFeaturePage; // ... and return it.
-	
+
 }
 add_shortcode('featuredPage', 'get_featured_page'); // create the shortcode for the function
 //
 
-// Add a Flexslider Gallery	
+// Add a Flexslider Gallery
 function add_flexslider() {
-	
+
 	global $post; // don't forget to make this a global variable inside your function
 	$attachments = get_children(array('post_parent' => $post->ID, 'order' => 'ASC', 'orderby' => 'menu_order',  'post_type' => 'attachment', 'post_mime_type' => 'image',));
 	if ($attachments) { // see if there are images attached to posting
-	
-    
-		
+
+
+
 		echo '<div id="slider">';
-		
+
 		foreach ( $attachments as $attachment ) { // create the list items for images with captions
-		    
+
             //echo wp_get_attachment_link($attachment->ID, 'full' );
             echo  '<a href="';
             echo  get_post_field('post_content', $attachment->ID);
@@ -190,10 +190,8 @@ function add_flexslider() {
             echo wp_get_attachment_image($attachment->ID, 'full'); // get image size large
             echo '</a>';
 		}
-	
+
 		echo '</div>';
-	
+
 	} // end see if images attachmed
-} 
- 
-                
+}
