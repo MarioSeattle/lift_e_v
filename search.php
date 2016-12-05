@@ -1,8 +1,7 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
-    <section id="primary" class="content-area">
-        <div id="content" class="site-content" role="main">
+    <div id="wrapper">
+        <main class="page">
 
             <?php if ( have_posts() ) : ?>
 
@@ -27,8 +26,8 @@ get_header(); ?>
 
             <?php endif; ?>
 
-        </div><!-- #content .site-content -->
-    </section><!-- #primary .content-area -->
+        </div><!-- #page  -->
+    </section><!-- #wraper -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
