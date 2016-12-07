@@ -652,7 +652,9 @@ footer {
         width: 99%;
         margin: 0 auto;
     }
-
+ sidebar#twitter {
+        float:none;
+    }
 }
 @media only screen and (min-width: 568px) {
   .footer-email {
@@ -662,6 +664,9 @@ footer {
     .footer-social {
         width: 99%;
         margin: 0 auto;
+    }
+     sidebar#twitter {
+        float:none;
     }
 }
 
@@ -676,6 +681,10 @@ footer {
     .footer-social {
         width: 99%;
         margin: 0 auto;
+    }
+    
+    sidebar#twitter {
+        float:none;
     }
 }
 
