@@ -9,6 +9,7 @@
                 <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
             </div>
         <?php endwhile; endif; ?>
+        <?php get_child_pages() ?>
         <!-- END CONTENT -->
     </main>
     <sidebar id="primary">
@@ -18,4 +19,3 @@
     </sidebar>
 </div>
 <?php get_footer(); ?>
-
