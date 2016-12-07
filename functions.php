@@ -161,8 +161,8 @@ function get_featured_page($atts) {
 
 	$myFeaturePage = '<a href="'.$caseLink.'">'.$caseImage.'</a>
                 <div class="cta-content">
-                    <h3><a href="'.$caseLink.'">'.$caseTitle.'</a></h3>
-                    <p>'.$caseExcerpt.'&nbsp;<a href="'.$caseLink.'">Read More&nbsp;&raquo;</a></p></div>'; // write it up...
+                    <h3><a href="'.$caseLink.'">'.substr($caseTitle,0,20).'</a></h3>
+                    <p>'.substr($caseExcerpt,0,55).'&nbsp;<a href="'.$caseLink.'">Read More&nbsp;&raquo;</a></p></div>'; // write it up...
 
 	return $myFeaturePage; // ... and return it.
 
