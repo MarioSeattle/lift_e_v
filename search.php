@@ -1,33 +1,43 @@
 <?php get_header(); ?>
 
-    <div id="wrapper">
-        <main class="page">
 
-            <?php if ( have_posts() ) : ?>
 
-                <header class="page-header">
-                    <h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'shape' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-                </header><!-- .page-header -->
+<!-- START CONTENT -->
+<div id="wrapper">
+<main id="content" class="search">
 
-                <?php shape_content_nav( 'nav-above' ); ?>
+ <?php if (have_posts()) : ?>
 
-                <?php /* Start the Loop */ ?>
-                <?php while ( have_posts() ) : the_post(); ?>
+   <h2>Search Results for &#8216;<?php the_search_query(); ?>&#8217;</h2>
+   <?php while (have_posts()) : the_post(); ?>
+     <div class="postBox">
+     <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
+       <p class="postmetadata">
+           <span class="date">Posted on <?php the_time('F jS, Y') ?></span> in
+           <span class="cat"><?php the_category(', ') ?></span>
+   <span class="author">by <?php the_author_posts_link(); ?></span>
+       </p>
+   <?php the_excerpt(); ?>
+           <p class="read-more"><a href="<?php the_permalink() ?>" rel="bookmark" title="Read more about <?php the_title(); ?>">More...</a></p>
+       </div><!-- /.post -->
+   <?php endwhile; ?>
+   <nav class="post-nav">
+           <p class="alignleft"><?php next_posts_link('&laquo; Older Posts') ?></p>
+           <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
+   </nav>
+ <?php else : ?>
+   <h2>Sorry, we didn't find anything matching &#8216;<?php the_search_query(); ?>&#8217;<br> Maybe try something else?</h2>
+     <?php get_search_form(); ?>
 
-                    <?php get_template_part( 'content', 'search' ); ?>
+ <?php endif; ?>
 
-                <?php endwhile; ?>
+</main>
+<!-- END CONTENT -->
+<!-- START SIDEBAR -->
+<sidebar id="primary">
+<?php get_sidebar(primary); ?>
+</sidebar>
+<!-- END SIDEBAR -->
 
-                <?php shape_content_nav( 'nav-below' ); ?>
-
-            <?php else : ?>
-
-                <?php get_template_part( 'no-results', 'search' ); ?>
-
-            <?php endif; ?>
-
-        </div><!-- #page  -->
-    </section><!-- #wraper -->
-
-<?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

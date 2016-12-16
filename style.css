@@ -406,6 +406,13 @@ img.left {
 }
 
 /* ----index page styles----END */
+/* ----search page styles----START */
+form#searchform{
+  margin: 25px 0;
+}
+
+/* ----Search page styles----END */
+
 @media all and (max-width: 790px) {
     /* ----Home page Media Q  styles----START */
     #cta-row {
@@ -682,7 +689,7 @@ footer {
         width: 99%;
         margin: 0 auto;
     }
-    
+
     sidebar#twitter {
         float:none;
     }
